@@ -31,21 +31,19 @@ int main(void)
 	uint32_t *pPortAOutReg=(uint32_t*)0x40020014;
 
 	//Enable the Clock
-	*pClkCtrlReg |= 0x01;
+	*pClkCtrlReg |= (1<<0);//*pClkCtrlReg |= 0x01;
 	//Configure the mode of the IO pin as output
 	//a. clear 10 and 11 position
-	*pPortAModeReg &= 0xFFFFF3FF;
+	*pPortAModeReg &=~(3<<10);//*pPortAModeReg &= 0xFFFFF3FF;
 	//b make 10 position as 1 set
-	*pPortAModeReg |= 0x00000400;
+	*pPortAModeReg |= (1<<10);//*pPortAModeReg |= 0x00000400;
 
 	//set 5 bit of the output data register....
-	*pPortAOutReg |=0x00000020;
-
+	*pPortAOutReg |=(1<<5);//*pPortAOutReg |=0x00000020;
 
 
 	for(;;);
 }
-
 
 /*Adres of the clock control register (AHB1ENR)
  * 0x4002 3800 - 0x4002 3BFF RCC

@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  16 .debug_macro  00001c1f  00000000  00000000  00010e50  2**0
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_line   00000624  00000000  00000000  00012a6f  2**0
+ 17 .debug_line   000005ed  00000000  00000000  00012a6f  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    00007e2e  00000000  00000000  00013093  2**0
+ 18 .debug_str    00007e2e  00000000  00000000  0001305c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  0001aec1  2**0
+ 19 .comment      0000007b  00000000  00000000  0001ae8a  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000058  00000000  00000000  0001af3c  2**2
+ 20 .debug_frame  00000058  00000000  00000000  0001af08  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -97,7 +97,7 @@ int main(void)
  8000214:	607b      	str	r3, [r7, #4]
 
 	//Enable the Clock
-	*pClkCtrlReg |= 0x01;
+	*pClkCtrlReg |= (1<<0);//*pClkCtrlReg |= 0x01;
  8000216:	68fb      	ldr	r3, [r7, #12]
  8000218:	681b      	ldr	r3, [r3, #0]
  800021a:	f043 0201 	orr.w	r2, r3, #1
@@ -105,14 +105,14 @@ int main(void)
  8000220:	601a      	str	r2, [r3, #0]
 	//Configure the mode of the IO pin as output
 	//a. clear 10 and 11 position
-	*pPortAModeReg &= 0xFFFFF3FF;
+	*pPortAModeReg &=~(3<<10);//*pPortAModeReg &= 0xFFFFF3FF;
  8000222:	68bb      	ldr	r3, [r7, #8]
  8000224:	681b      	ldr	r3, [r3, #0]
  8000226:	f423 6240 	bic.w	r2, r3, #3072	; 0xc00
  800022a:	68bb      	ldr	r3, [r7, #8]
  800022c:	601a      	str	r2, [r3, #0]
 	//b make 10 position as 1 set
-	*pPortAModeReg |= 0x00000400;
+	*pPortAModeReg |= (1<<10);//*pPortAModeReg |= 0x00000400;
  800022e:	68bb      	ldr	r3, [r7, #8]
  8000230:	681b      	ldr	r3, [r3, #0]
  8000232:	f443 6280 	orr.w	r2, r3, #1024	; 0x400
@@ -120,13 +120,12 @@ int main(void)
  8000238:	601a      	str	r2, [r3, #0]
 
 	//set 5 bit of the output data register....
-	*pPortAOutReg |=0x00000020;
+	*pPortAOutReg |=(1<<5);//*pPortAOutReg |=0x00000020;
  800023a:	687b      	ldr	r3, [r7, #4]
  800023c:	681b      	ldr	r3, [r3, #0]
  800023e:	f043 0220 	orr.w	r2, r3, #32
  8000242:	687b      	ldr	r3, [r7, #4]
  8000244:	601a      	str	r2, [r3, #0]
-
 
 
 	for(;;);
