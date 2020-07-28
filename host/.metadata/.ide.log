@@ -1,0 +1,8 @@
+2020-07-28 14:19:57,340 [INFO] Activator:176 - 
+
+
+2020-07-28 14:19:57,377 [INFO] Activator:177 - !SESSION log4j initialized
+2020-07-28 14:20:52,915 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Artifact repository out of sync. Overwriting D:\Program Files\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-arm-embedded.7-2018-q2-update.win32_1.4.0.202007081208
+2020-07-28 14:20:52,926 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Artifact repository out of sync. Overwriting D:\Program Files\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824
+2020-07-28 14:20:52,938 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Artifact repository out of sync. Overwriting D:\Program Files\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.productdb.debug_1.4.0.202007081208
+2020-07-28 14:20:52,945 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Artifact repository out of sync. Overwriting D:\Program Files\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208
