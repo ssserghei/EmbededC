@@ -31,8 +31,8 @@ int main(void)
 	uint32_t *pPortAModeReg=(uint32_t*)0x40020000;
 	uint32_t *pPortAOutReg=(uint32_t*)0x40020014;
 
-	uint32_t *pPortCModeReg=(uint32_t*)0x40020800;	//0x4002 0800 - 0x4002 0BFF		//GPIOC base adres
-	uint32_t *pPortCInReg=(uint32_t*)0x40020810;
+	uint32_t *pPortCModeReg=(uint32_t*)0x40020000;
+	//
 
 
 	//Enable the Clock
@@ -45,25 +45,16 @@ int main(void)
 	//b make 10 position as 1 set
 	*pPortAModeReg |= (1<<10);//*pPortAModeReg |= 0x00000400;
 
-	//Configuring PC13 as input mode (GPIOC MODE Register)
-	*pPortCModeReg &=~(3<<13);
+	//Configuring PC13 as input mode (GPIOA MODE Register)
 
-	while(1){
-	//read the pin status of the pin PC13 //7.4.5 GPIO port input data register (GPIOx_IDR) (x = A..H)
-	uint8_t pinStatus=*pPortCInReg & 0x2000; /////.......
 
-	if(pinStatus){
-		//turn on LED
-		*pPortAModeReg |= (1<<10);
-		}else{
-			//turn off the LED
-			*pPortAModeReg &=~(3<<10);
-			}
 
 	//set 5 bit of the output data register....
 	*pPortAOutReg |=(1<<5);//*pPortAOutReg |=0x00000020;
-	}//end of while
-}//endof main
+
+
+	for(;;);
+}
 
 /*Adres of the clock control register (AHB1ENR)
  * 0x4002 3800 - 0x4002 3BFF RCC

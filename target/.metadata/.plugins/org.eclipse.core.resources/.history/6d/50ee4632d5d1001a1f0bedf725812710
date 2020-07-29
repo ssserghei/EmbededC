@@ -21,7 +21,6 @@
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
-/*nButton is conected on PC13*/
 #include<stdint.h>
 #include<stdio.h>
 
@@ -31,39 +30,20 @@ int main(void)
 	uint32_t *pPortAModeReg=(uint32_t*)0x40020000;
 	uint32_t *pPortAOutReg=(uint32_t*)0x40020014;
 
-	uint32_t *pPortCModeReg=(uint32_t*)0x40020800;	//0x4002 0800 - 0x4002 0BFF		//GPIOC base adres
-	uint32_t *pPortCInReg=(uint32_t*)0x40020810;
-
-
 	//Enable the Clock
-	*pClkCtrlReg |= (1<<0);//*pClkCtrlReg |= 0x01;	//Enable Clock on PortA
-	*pClkCtrlReg |= (1<<2);							//Enable Clock on PortC //6.3.10 RCC AHB1 peripheral clock enable register (RCC_AHB1ENR)
-
-	//Configure PA5 IO pin as output
+	*pClkCtrlReg |= (1<<0);//*pClkCtrlReg |= 0x01;
+	//Configure the mode of the IO pin as output
 	//a. clear 10 and 11 position
 	*pPortAModeReg &=~(3<<10);//*pPortAModeReg &= 0xFFFFF3FF;
 	//b make 10 position as 1 set
 	*pPortAModeReg |= (1<<10);//*pPortAModeReg |= 0x00000400;
 
-	//Configuring PC13 as input mode (GPIOC MODE Register)
-	*pPortCModeReg &=~(3<<13);
-
-	while(1){
-	//read the pin status of the pin PC13 //7.4.5 GPIO port input data register (GPIOx_IDR) (x = A..H)
-	uint8_t pinStatus=*pPortCInReg & 0x2000; /////.......
-
-	if(pinStatus){
-		//turn on LED
-		*pPortAModeReg |= (1<<10);
-		}else{
-			//turn off the LED
-			*pPortAModeReg &=~(3<<10);
-			}
-
 	//set 5 bit of the output data register....
 	*pPortAOutReg |=(1<<5);//*pPortAOutReg |=0x00000020;
-	}//end of while
-}//endof main
+
+
+	for(;;);
+}
 
 /*Adres of the clock control register (AHB1ENR)
  * 0x4002 3800 - 0x4002 3BFF RCC

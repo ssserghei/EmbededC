@@ -1,10 +1,10 @@
-22:05:12 **** Incremental Build of configuration Debug for project NucleoF446re_LED_ON ****
-make -j12 all 
+23:06:42 **** Incremental Build of configuration Debug for project NucleoF446re_LED_ON ****
+make -j2 all 
 arm-none-eabi-size   NucleoF446re_LED_ON.elf 
    text	   data	    bss	    dec	    hex	filename
     776	      8	   1568	   2352	    930	NucleoF446re_LED_ON.elf
 Finished building: default.size.stdout
  
 
-22:05:12 Build Finished. 0 errors, 0 warnings. (took 342ms)
+23:06:42 Build Finished. 0 errors, 0 warnings. (took 504ms)
 

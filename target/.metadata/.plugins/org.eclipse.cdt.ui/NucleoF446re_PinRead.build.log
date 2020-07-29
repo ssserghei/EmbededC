@@ -1,0 +1,22 @@
+23:06:42 **** Incremental Build of configuration Debug for project NucleoF446re_PinRead ****
+make -j2 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DDEBUG -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:21:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:55:2: error: invalid operands to binary * (have 'uint32_t {aka long unsigned int}' and 'uint32_t * {aka long unsigned int *}')
+../Src/main.c:52:20:
+  uint8_t pinStatus=*pPortCInReg
+                    ~~~~~~~~~~~~
+../Src/main.c:55:2:
+  *pPortAOutReg |=(1<<5);//*pPortAOutReg |=0x00000020;
+  ^
+../Src/main.c:52:10: warning: unused variable 'pinStatus' [-Wunused-variable]
+  uint8_t pinStatus=*pPortCInReg
+          ^~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j2 all" terminated with exit code 2. Build might be incomplete.
+
+23:06:43 Build Failed. 2 errors, 2 warnings. (took 818ms)
+
