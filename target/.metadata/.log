@@ -19,3 +19,27 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2020-07-30 14:36:56.232
 !MESSAGE Indexed 'NucleoF446re_PinRead' (3 sources, 54 headers) in 0,359 sec: 2 079 declarations; 2 902 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,04 %)
+!SESSION 2020-07-30 22:31:27.301 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-07-30 22:32:49.998
+!MESSAGE Log4j initialized with config file D:\GitHub\Embeded-C\target\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-07-30 22:33:09.490
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-07-30 22:33:11.751
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-30 22:34:34.044
+!MESSAGE Indexed 'NucleoF446re_LED_ON' (3 sources, 54 headers) in 6,58 sec: 2 074 declarations; 2 881 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-30 22:34:40.246
+!MESSAGE Indexed 'NucleoF446re_PinRead' (3 sources, 54 headers) in 1,1 sec: 2 079 declarations; 2 902 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,04 %)
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-07-30 23:50:31.759
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob

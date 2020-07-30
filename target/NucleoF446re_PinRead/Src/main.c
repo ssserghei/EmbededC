@@ -35,7 +35,7 @@ int main(void)
 	uint32_t *pPortCInReg=(uint32_t*)0x40020810;
 
 
-	//Enable the Clock
+	//Enable the Clock GPIOD, GPOIA
 	*pClkCtrlReg |= (1<<0);//*pClkCtrlReg |= 0x01;	//Enable Clock on PortA
 	*pClkCtrlReg |= (1<<2);							//Enable Clock on PortC //6.3.10 RCC AHB1 peripheral clock enable register (RCC_AHB1ENR)
 
@@ -50,7 +50,8 @@ int main(void)
 
 	while(1){
 	//read the pin status of the pin PC13 //7.4.5 GPIO port input data register (GPIOx_IDR) (x = A..H)
-	uint8_t pinStatus=*pPortCInReg & 0x2000; /////.......
+	//uint8_t pinStatus=(uint8_t)(*pPortCInReg & 0x2000); /////.......
+		uint8_t pinStatus=0;
 
 	if(pinStatus){
 		//turn on LED
