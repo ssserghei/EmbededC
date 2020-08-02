@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  0001035c  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00000955  00000000  00000000  0001038c  2**0
+ 12 .debug_info   0000093f  00000000  00000000  0001038c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_abbrev 00000191  00000000  00000000  00010ce1  2**0
+ 13 .debug_abbrev 00000191  00000000  00000000  00010ccb  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_aranges 00000048  00000000  00000000  00010e78  2**3
+ 14 .debug_aranges 00000048  00000000  00000000  00010e60  2**3
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_ranges 00000030  00000000  00000000  00010ec0  2**3
+ 15 .debug_ranges 00000030  00000000  00000000  00010ea8  2**3
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_macro  00001c25  00000000  00000000  00010ef0  2**0
+ 16 .debug_macro  00001c25  00000000  00000000  00010ed8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_line   0000062a  00000000  00000000  00012b15  2**0
+ 17 .debug_line   0000062a  00000000  00000000  00012afd  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    00007e6d  00000000  00000000  0001313f  2**0
+ 18 .debug_str    00007e63  00000000  00000000  00013127  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  0001afac  2**0
+ 19 .comment      0000007b  00000000  00000000  0001af8a  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000058  00000000  00000000  0001b028  2**2
+ 20 .debug_frame  00000058  00000000  00000000  0001b008  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -86,7 +86,7 @@ int main(void)
  8000204:	b480      	push	{r7}
  8000206:	b087      	sub	sp, #28
  8000208:	af00      	add	r7, sp, #0
-	uint32_t *pClkCtrlReg=(uint32_t*)0x40023830;
+	uint32_t *pClkCtrlReg=(uint32_t*)0x40023830; //
  800020a:	4b20      	ldr	r3, [pc, #128]	; (800028c <main+0x88>)
  800020c:	617b      	str	r3, [r7, #20]
 	uint32_t *pPortAModeReg=(uint32_t*)0x40020000;
@@ -104,7 +104,7 @@ int main(void)
  800021c:	607b      	str	r3, [r7, #4]
 
 
-	//Enable the Clock GPIOD, GPOIA
+	//1. Enable the Clock GPIOD, GPOIA
 	*pClkCtrlReg |= (1<<0);//*pClkCtrlReg |= 0x01;	//Enable Clock on PortA
  800021e:	697b      	ldr	r3, [r7, #20]
  8000220:	681b      	ldr	r3, [r3, #0]
@@ -134,7 +134,8 @@ int main(void)
  800024a:	693b      	ldr	r3, [r7, #16]
  800024c:	601a      	str	r2, [r3, #0]
 
-	//Configuring PC13 as input mode (GPIOC MODE Register)
+
+	//Configuring PC13 as input mode (GPIOC MODE Register) 00: input- reset state
 	*pPortCModeReg &=~(3<<13);
  800024e:	68bb      	ldr	r3, [r7, #8]
  8000250:	681b      	ldr	r3, [r3, #0]
@@ -145,12 +146,12 @@ int main(void)
 	while(1){
 	//read the pin status of the pin PC13 //7.4.5 GPIO port input data register (GPIOx_IDR) (x = A..H)
 	//uint8_t pinStatus=(uint8_t)(*pPortCInReg & 0x2000); /////.......
-		uint8_t pinStatus=0;
+		uint32_t pinStatus=0;
  800025a:	2300      	movs	r3, #0
- 800025c:	70fb      	strb	r3, [r7, #3]
+ 800025c:	603b      	str	r3, [r7, #0]
 
 	if(pinStatus){
- 800025e:	78fb      	ldrb	r3, [r7, #3]
+ 800025e:	683b      	ldr	r3, [r7, #0]
  8000260:	2b00      	cmp	r3, #0
  8000262:	d006      	beq.n	8000272 <main+0x6e>
 		//turn on LED

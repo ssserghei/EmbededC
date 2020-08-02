@@ -27,7 +27,7 @@
 
 int main(void)
 {
-	uint32_t *pClkCtrlReg=(uint32_t*)0x40023830;
+	uint32_t *pClkCtrlReg=(uint32_t*)0x40023830; //
 	uint32_t *pPortAModeReg=(uint32_t*)0x40020000;
 	uint32_t *pPortAOutReg=(uint32_t*)0x40020014;
 
@@ -35,7 +35,7 @@ int main(void)
 	uint32_t *pPortCInReg=(uint32_t*)0x40020810;
 
 
-	//Enable the Clock GPIOD, GPOIA
+	//1. Enable the Clock GPIOD, GPOIA
 	*pClkCtrlReg |= (1<<0);//*pClkCtrlReg |= 0x01;	//Enable Clock on PortA
 	*pClkCtrlReg |= (1<<2);							//Enable Clock on PortC //6.3.10 RCC AHB1 peripheral clock enable register (RCC_AHB1ENR)
 
@@ -45,7 +45,8 @@ int main(void)
 	//b make 10 position as 1 set
 	*pPortAModeReg |= (1<<10);//*pPortAModeReg |= 0x00000400;
 
-	//Configuring PC13 as input mode (GPIOC MODE Register)
+
+	//Configuring PC13 as input mode (GPIOC MODE Register) 00: input- reset state
 	*pPortCModeReg &=~(3<<13);
 
 	while(1){
