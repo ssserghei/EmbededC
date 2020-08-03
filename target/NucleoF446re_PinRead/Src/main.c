@@ -27,7 +27,8 @@
 
 int main(void)
 {
-	uint32_t *pClkCtrlReg=(uint32_t*)0x40023830; //
+	uint32_t *pCntlkCtrlReg=(uint32_t*)0x40023830; //
+
 	uint32_t *pPortAModeReg=(uint32_t*)0x40020000;
 	uint32_t *pPortAOutReg=(uint32_t*)0x40020014;
 
@@ -36,8 +37,8 @@ int main(void)
 
 
 	//1. Enable the Clock GPIOD, GPOIA
-	*pClkCtrlReg |= (1<<0);//*pClkCtrlReg |= 0x01;	//Enable Clock on PortA
-	*pClkCtrlReg |= (1<<2);							//Enable Clock on PortC //6.3.10 RCC AHB1 peripheral clock enable register (RCC_AHB1ENR)
+	*pCntlkCtrlReg |= (1<<0);//*pClkCtrlReg |= 0x01;	//Enable Clock on PortA
+	*pCntlkCtrlReg |= (1<<2);							//Enable Clock on PortC //6.3.10 RCC AHB1 peripheral clock enable register (RCC_AHB1ENR)
 
 	//Configure PA5 IO pin as output
 	//a. clear 10 and 11 position
@@ -51,19 +52,28 @@ int main(void)
 
 	while(1){
 	//read the pin status of the pin PC13 //7.4.5 GPIO port input data register (GPIOx_IDR) (x = A..H)
-	//uint8_t pinStatus=(uint8_t)(*pPortCInReg & 0x2000); /////.......
-		uint8_t pinStatus=0;
+	//uint8_t pinStatus=(uint8_t)(pinStatus >>12) & 0x1FFF); /////.......
 
+		uint8_t pinStatus=0;
+		pinStatus=*pPortCInReg;
+	 pinStatus=((pinStatus >>12) & (0x01));
+
+
+		*pPortAOutReg |=(1<<5);
+
+
+	//data &~
 	if(pinStatus){
 		//turn on LED
-		*pPortAModeReg |= (1<<10);
+		*pPortAOutReg |=(1<<5);
 		}else{
 			//turn off the LED
-			*pPortAModeReg &=~(3<<10);
+			*pPortAOutReg &=~(1<<5);
 			}
 
 	//set 5 bit of the output data register....
-	*pPortAOutReg |=(1<<5);//*pPortAOutReg |=0x00000020;
+	//*pPortAOutReg |=(1<<5);//*pPortAOutReg |=0x00000020;
+
 	}//end of while
 }//endof main
 
