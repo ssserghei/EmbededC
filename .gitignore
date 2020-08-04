@@ -1,3 +1,7 @@
 My_workspace
 target/RemoteSystemsTempFiles
 target/.metadata
+*.snap
+*.index
+*.resources
+*.xml

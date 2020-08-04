@@ -27,7 +27,7 @@
 
 int main(void)
 {
-	uint32_t *pCntlkCtrlReg=(uint32_t*)0x40023830; //
+	uint32_t *pCntlkCtrlReg=(uint32_t*)0x40023830;
 
 	uint32_t *pPortAModeReg=(uint32_t*)0x40020000;
 	uint32_t *pPortAOutReg=(uint32_t*)0x40020014;
@@ -50,17 +50,15 @@ int main(void)
 	//Configuring PC13 as input mode (GPIOC MODE Register) 00: input- reset state
 	*pPortCModeReg &=~(3<<13);
 
+	uint32_t pinStatus=*pPortCInReg;
+
 	while(1){
 	//read the pin status of the pin PC13 //7.4.5 GPIO port input data register (GPIOx_IDR) (x = A..H)
 	//uint8_t pinStatus=(uint8_t)(pinStatus >>12) & 0x1FFF); /////.......
 
-		uint8_t pinStatus=0;
-		pinStatus=*pPortCInReg;
-	 pinStatus=((pinStatus >>12) & (0x01));
+	 pinStatus=pinStatus & 0x2000;
 
-
-		*pPortAOutReg |=(1<<5);
-
+	// pinStatus=((pinStatus >>12) & (0x01));
 
 	//data &~
 	if(pinStatus){
