@@ -28,3 +28,362 @@
 
 
 2020-08-04 13:27:28,698 [INFO] Activator:179 - !SESSION log4j initialized
+2020-08-12 17:10:55,347 [INFO] Activator:178 - 
+
+
+2020-08-12 17:10:55,360 [INFO] Activator:179 - !SESSION log4j initialized
+2020-08-12 17:11:15,193 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824
+2020-08-12 17:11:15,209 [INFO] DbMcusXml:70 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/
+2020-08-12 17:11:15,214 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/boardmanager/
+2020-08-12 17:11:15,214 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2020-08-12 17:11:15,214 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2020-08-12 17:11:15,217 [INFO] DbExamples:326 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2020-08-12 17:11:15,231 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,234 [INFO] DbMcusJson:63 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,234 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,236 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,242 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-08-12 17:11:15,246 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,377 [INFO] RulesReader:52 - Compatibility file has been processed (209 Rules)
+2020-08-12 17:11:15,483 [INFO] MicroXplorer:564 - Detected Java Version = 1.8.0_242
+2020-08-12 17:11:15,483 [INFO] DbMcusXml:70 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/
+2020-08-12 17:11:15,483 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/boardmanager/
+2020-08-12 17:11:15,484 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2020-08-12 17:11:15,484 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2020-08-12 17:11:15,505 [INFO] DbExamples:326 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2020-08-12 17:11:15,505 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,505 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,505 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,505 [INFO] DbMcusJson:63 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,506 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,506 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,506 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,506 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,506 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,506 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,507 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-08-12 17:11:15,507 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,507 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,593 [INFO] MainPanel:189 - HeapMemory: 368050176
+2020-08-12 17:11:15,703 [INFO] DbMcusXml:70 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/
+2020-08-12 17:11:15,704 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/boardmanager/
+2020-08-12 17:11:15,704 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2020-08-12 17:11:15,704 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2020-08-12 17:11:15,704 [INFO] DbExamples:326 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2020-08-12 17:11:15,705 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,705 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,706 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,706 [INFO] DbMcusJson:63 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,706 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,706 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,706 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,706 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,707 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,707 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,707 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-08-12 17:11:15,707 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder/ => C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder
+2020-08-12 17:11:15,707 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder//mcu/
+2020-08-12 17:11:15,730 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824
+2020-08-12 17:11:15,732 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, ]
+2020-08-12 17:11:15,734 [INFO] PluginManage:292 - Check plugin analytics
+2020-08-12 17:11:15,900 [INFO] AnalyticsPlugin:203 - Accepted Software Licenses: 
+2020-08-12 17:11:15,900 [INFO] AnalyticsPlugin:205 - Accepted CMSIS Pack Licenses: 
+2020-08-12 17:11:15,901 [INFO] AnalyticsPlugin:207 - Accepted Firmware Licenses: 
+2020-08-12 17:11:15,901 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-08-12 17:11:15,901 [INFO] PluginManage:292 - Check plugin clock
+2020-08-12 17:11:15,924 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-08-12 17:11:15,924 [INFO] PluginManage:292 - Check plugin ddr
+2020-08-12 17:11:15,927 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-08-12 17:11:15,927 [INFO] PluginManage:292 - Check plugin filemanager
+2020-08-12 17:11:16,087 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-08-12 17:11:16,087 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-08-12 17:11:16,097 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-08-12 17:11:16,097 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-08-12 17:11:16,115 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-08-12 17:11:16,115 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-08-12 17:11:16,153 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-08-12 17:11:16,153 [INFO] PluginManage:292 - Check plugin power
+2020-08-12 17:11:16,195 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-08-12 17:11:16,195 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-08-12 17:11:16,217 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-08-12 17:11:16,217 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-08-12 17:11:16,328 [INFO] ThirdPartyDb:333 - Open Third Party DataBase File (C:/Users/SimpalsGarage/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 14 ms. number of Sw pack : 13
+2020-08-12 17:11:16,334 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-08-12 17:11:16,334 [INFO] PluginManage:292 - Check plugin tools
+2020-08-12 17:11:16,365 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-08-12 17:11:16,365 [INFO] PluginManage:292 - Check plugin tutovideos
+2020-08-12 17:11:16,675 [INFO] PluginManage:342 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2020-08-12 17:11:16,676 [INFO] PluginManage:292 - Check plugin updater
+2020-08-12 17:11:16,687 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-08-12 17:11:16,688 [INFO] PluginManage:265 - PluginManage : Loaded plugins [13]
+2020-08-12 17:11:16,901 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-08-12 17:11:17,100 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,100 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2020-08-12 17:11:17,126 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,126 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2020-08-12 17:11:17,154 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,154 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2020-08-12 17:11:17,172 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,173 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2020-08-12 17:11:17,195 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,195 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2020-08-12 17:11:17,218 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,218 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2020-08-12 17:11:17,273 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,274 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2020-08-12 17:11:17,291 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,292 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2020-08-12 17:11:17,322 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,323 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2020-08-12 17:11:17,336 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,337 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2020-08-12 17:11:17,355 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,355 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2020-08-12 17:11:17,405 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,405 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2020-08-12 17:11:17,474 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,474 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2020-08-12 17:11:17,591 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,591 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2020-08-12 17:11:17,640 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,640 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2020-08-12 17:11:17,675 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,675 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2020-08-12 17:11:17,716 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,717 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2020-08-12 17:11:17,763 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,763 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2020-08-12 17:11:17,809 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,809 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2020-08-12 17:11:17,832 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,833 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2020-08-12 17:11:17,909 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:17,909 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2020-08-12 17:11:18,016 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,017 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2020-08-12 17:11:18,041 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,041 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2020-08-12 17:11:18,077 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,077 [INFO] PluginManager:200 - loadIPPluginJar : add openamp
+2020-08-12 17:11:18,106 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,106 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2020-08-12 17:11:18,223 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,228 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2020-08-12 17:11:18,246 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,246 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2020-08-12 17:11:18,261 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,262 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2020-08-12 17:11:18,290 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,290 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2020-08-12 17:11:18,315 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,315 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2020-08-12 17:11:18,345 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,345 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2020-08-12 17:11:18,364 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,364 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2020-08-12 17:11:18,399 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,399 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2020-08-12 17:11:18,418 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,418 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2020-08-12 17:11:18,436 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,436 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2020-08-12 17:11:18,454 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,454 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2020-08-12 17:11:18,472 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,472 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2020-08-12 17:11:18,498 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-08-12 17:11:18,499 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2020-08-12 17:11:19,465 [INFO] CubeProgrammer:457 - [DDR PANEL] - PathOfProgrammer: null
+2020-08-12 17:11:20,412 [FATAL] Updater:282 - Updater called before beeing initialized
+2020-08-12 17:11:20,612 [FATAL] Updater:282 - Updater called before beeing initialized
+2020-08-12 17:11:20,612 [WARN] ThirdParty:775 - waiting for thirdparty lock release [close project]
+2020-08-12 17:11:20,612 [INFO] ThirdParty:777 - entering critical section [close project]
+2020-08-12 17:11:20,613 [INFO] ThirdParty:790 - exiting critical section [close project]
+2020-08-12 17:11:20,616 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-08-12 17:11:20,617 [FATAL] Updater:282 - Updater called before beeing initialized
+2020-08-12 17:11:20,627 [ERROR] Updater:967 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2020-08-12 17:11:20,629 [INFO] CubeProgrammer:457 - [DDR PANEL] - PathOfProgrammer: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin
+2020-08-12 17:11:20,633 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin\STM32_Programmer_CLI.exe -l
+2020-08-12 17:11:21,037 [INFO] MainDdrPanel:49 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin
+2020-08-12 17:11:21,153 [INFO] Updater:904 - Updater Version found : 6.0.0
+2020-08-12 17:11:21,177 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824
+2020-08-12 17:11:21,435 [INFO] MainUpdater:2268 - connection check result : 10
+2020-08-12 17:11:21,435 [INFO] MainUpdater:2935 - Updater definition file requires update
+2020-08-12 17:11:21,439 [INFO] MainUpdater:239 - Updater Check For Update Now.
+2020-08-12 17:11:21,439 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-08-12 17:11:22,192 [INFO] ServerAccessManage:348 - Download File updaters.zip
+2020-08-12 17:11:22,229 [INFO] FileExtend:225 - Unzip File : updaters.zip
+2020-08-12 17:11:22,229 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-08-12 17:11:22,336 [WARN] IntegrityCheckThread:61 - waiting for thirdparty lock release [integrity check]
+2020-08-12 17:11:22,336 [INFO] IntegrityCheckThread:63 - entering critical section [integrity check]
+2020-08-12 17:11:22,336 [WARN] MainUpdater:1087 - Updater busy. Cannot search thirdparties
+2020-08-12 17:11:22,658 [INFO] ServerAccessManage:348 - Download File PacksControlFlags.xml
+2020-08-12 17:11:22,750 [INFO] ServerAccessManage:348 - Download File cubemx.pidx
+2020-08-12 17:11:22,861 [INFO] LoadServerUpdatesThread:309 - End of LoadServerUpdate Thread
+2020-08-12 17:11:22,904 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2020-08-12 17:11:22,991 [INFO] MainUpdater:2268 - connection check result : 10
+2020-08-12 17:11:23,320 [INFO] ServerAccessManage:348 - Download File mcusDocs.json._tmp_
+2020-08-12 17:11:23,336 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2020-08-12 17:11:24,437 [INFO] ServerAccessManage:348 - Download File mcusFeaturesAndDescription.json._tmp_
+2020-08-12 17:11:24,512 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2020-08-12 17:11:24,836 [INFO] ServerAccessManage:348 - Download File boardsDocs.json._tmp_
+2020-08-12 17:11:24,853 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2020-08-12 17:11:25,115 [INFO] ServerAccessManage:348 - Download File boards.json._tmp_
+2020-08-12 17:11:25,133 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2020-08-12 17:11:25,213 [INFO] ServerAccessManage:348 - Download File cube-finder-db.zip
+2020-08-12 17:11:25,337 [WARN] MainUpdater:1087 - Updater busy. Cannot search thirdparties
+2020-08-12 17:11:28,338 [WARN] MainUpdater:1087 - Updater busy. Cannot search thirdparties
+2020-08-12 17:11:31,338 [WARN] MainUpdater:1087 - Updater busy. Cannot search thirdparties
+2020-08-12 17:11:31,810 [INFO] FileExtend:225 - Unzip File : cube-finder-db.zip
+2020-08-12 17:11:31,812 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-08-12 17:11:32,198 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2020-08-12 17:11:32,696 [INFO] ServerAccessManage:348 - Download File crdb.zip
+2020-08-12 17:11:32,709 [INFO] FileExtend:225 - Unzip File : crdb.zip
+2020-08-12 17:11:32,711 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-08-12 17:11:32,735 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2020-08-12 17:11:32,939 [INFO] ServerAccessManage:348 - Download File tutoVideoDB.zip
+2020-08-12 17:11:32,945 [INFO] FileExtend:225 - Unzip File : tutoVideoDB.zip
+2020-08-12 17:11:32,947 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-08-12 17:11:32,960 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2020-08-12 17:11:32,983 [INFO] DbMcusDocs:145 - JSON generation date=Mon Jul 27 15:58:30 EEST 2020 (1595854710)
+2020-08-12 17:11:32,985 [INFO] DbMcusXml:100 - Load MCU database from C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/families.xml
+2020-08-12 17:11:33,614 [INFO] DbMcusJson:92 - JSON generation date=Mon Jul 27 15:58:30 EEST 2020 (1595854710)
+2020-08-12 17:11:34,288 [INFO] DbMcus:175 - Found 1761 MCUs (1722 are supported by CubeMX, 1728 are visible in CubeMX)
+2020-08-12 17:11:34,290 [INFO] ApiDb:201 - Load user favorites file C:\Users\SimpalsGarage/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2020-08-12 17:11:34,290 [INFO] ApiDb:205 - User favorites MCUs=[]
+2020-08-12 17:11:34,290 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2020-08-12 17:11:34,346 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/SimpalsGarage/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-08-12 17:11:34,355 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/SimpalsGarage/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-08-12 17:11:34,361 [INFO] IntegrityCheckThread:76 - exiting critical section [integrity check]
+2020-08-12 17:11:34,361 [INFO] IntegrityCheckThread:79 - End integrity checks thread
+2020-08-12 17:11:34,574 [INFO] DbMcusDocs:81 - Found 580 MCUs documents
+2020-08-12 17:11:34,576 [INFO] ApiDb:226 - Save user favorites file C:\Users\SimpalsGarage/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2020-08-12 17:11:34,577 [INFO] ApiDb:230 - User favorites MCUs=[]
+2020-08-12 17:11:34,577 [INFO] DbMcusXml:100 - Load MCU database from C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/families.xml
+2020-08-12 17:11:34,949 [INFO] DbMcusJson:92 - JSON generation date=Mon Jul 27 15:58:30 EEST 2020 (1595854710)
+2020-08-12 17:11:35,346 [INFO] DbMcus:175 - Found 1761 MCUs (1722 are supported by CubeMX, 1728 are visible in CubeMX)
+2020-08-12 17:11:35,346 [INFO] ApiDb:201 - Load user favorites file C:\Users\SimpalsGarage/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2020-08-12 17:11:35,346 [INFO] ApiDb:205 - User favorites MCUs=[]
+2020-08-12 17:11:35,347 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2020-08-12 17:11:35,360 [INFO] DbBoardsDocs:145 - JSON generation date=Mon Jul 27 15:58:30 EEST 2020 (1595854710)
+2020-08-12 17:11:35,384 [INFO] DbBoardsPdsc:94 - Found 23 items
+2020-08-12 17:11:35,391 [INFO] DbBoardsPdsc:94 - Found 9 items
+2020-08-12 17:11:35,402 [INFO] DbBoardsPdsc:94 - Found 29 items
+2020-08-12 17:11:35,407 [INFO] DbBoardsPdsc:94 - Found 1 items
+2020-08-12 17:11:35,420 [INFO] DbBoardsPdsc:94 - Found 44 items
+2020-08-12 17:11:35,434 [INFO] DbBoardsPdsc:94 - Found 40 items
+2020-08-12 17:11:35,440 [INFO] DbBoardsPdsc:94 - Found 2 items
+2020-08-12 17:11:35,447 [INFO] DbBoardsPdsc:94 - Found 4 items
+2020-08-12 17:11:35,453 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2020-08-12 17:11:35,453 [WARN] DbBoardsPdsc:258 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2020-08-12 17:11:35,455 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2020-08-12 17:11:35,455 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2020-08-12 17:11:35,456 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2020-08-12 17:11:35,465 [INFO] DbBoardsJson:85 - JSON generation date=Thu Jul 02 16:35:57 EEST 2020 (1593696957)
+2020-08-12 17:11:35,471 [INFO] DbBoards:117 - Found 152 boards (149 are supported by CubeMX)
+2020-08-12 17:11:35,478 [INFO] DbBoardsDocs:145 - JSON generation date=Mon Jul 27 15:58:30 EEST 2020 (1595854710)
+2020-08-12 17:11:35,497 [INFO] DbBoardsDocs:81 - Found 185 boards documents
+2020-08-12 17:11:35,498 [WARN] DbBoards:149 - board B-G474E-DPOW1 / document id not found: 4624
+2020-08-12 17:11:35,498 [WARN] DbBoards:149 - board B-G474E-DPOW1 / document id not found: 4625
+2020-08-12 17:11:35,499 [WARN] DbBoards:127 - board B-L462E-CELL1 has no document id list !
+2020-08-12 17:11:35,499 [WARN] DbBoards:127 - board B-L475E-IOT01A2 has no document id list !
+2020-08-12 17:11:35,500 [WARN] DbBoards:127 - board NUCLEO-G491RE has no document id list !
+2020-08-12 17:11:35,500 [WARN] DbBoards:127 - board NUCLEO-H723ZG has no document id list !
+2020-08-12 17:11:35,500 [WARN] DbBoards:127 - board NUCLEO-H743ZI2 has no document id list !
+2020-08-12 17:11:35,501 [WARN] DbBoards:127 - board NUCLEO-WB55RG has no document id list !
+2020-08-12 17:11:35,501 [WARN] DbBoards:127 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2020-08-12 17:11:35,501 [WARN] DbBoards:127 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2020-08-12 17:11:35,502 [WARN] DbBoards:127 - board STEVAL-BFA001V1B has no document id list !
+2020-08-12 17:11:35,502 [WARN] DbBoards:127 - board STEVAL-BFA001V2B has no document id list !
+2020-08-12 17:11:35,502 [WARN] DbBoards:127 - board STEVAL-IDP005V1 has no document id list !
+2020-08-12 17:11:35,502 [WARN] DbBoards:127 - board STEVAL-IDP005V2 has no document id list !
+2020-08-12 17:11:35,502 [WARN] DbBoards:127 - board STEVAL-MKSBOX1V1 has no document id list !
+2020-08-12 17:11:35,502 [WARN] DbBoards:127 - board STEVAL-STWINKT1 has no document id list !
+2020-08-12 17:11:35,503 [WARN] DbBoards:127 - board STM32F401C-DISCO has no document id list !
+2020-08-12 17:11:35,503 [WARN] DbBoards:127 - board STM32F769I-DISC1 has no document id list !
+2020-08-12 17:11:35,504 [WARN] DbBoards:127 - board STM32G474E-EVAL1 has no document id list !
+2020-08-12 17:11:35,504 [WARN] DbBoards:127 - board STM32H735G-DK has no document id list !
+2020-08-12 17:11:35,504 [WARN] DbBoards:127 - board STM32H743I-EVAL2 has no document id list !
+2020-08-12 17:11:35,504 [WARN] DbBoards:127 - board STM32H747I-DISC1 has no document id list !
+2020-08-12 17:11:35,505 [WARN] DbBoards:127 - board STM32H753I-EVAL2 has no document id list !
+2020-08-12 17:11:35,505 [WARN] DbBoards:127 - board STM32L-DISCOVERY has no document id list !
+2020-08-12 17:11:35,506 [WARN] DbBoards:127 - board STM32MP157A-DK1 has no document id list !
+2020-08-12 17:11:35,506 [WARN] DbBoards:127 - board STM32MP157F-EV1 has no document id list !
+2020-08-12 17:11:35,598 [ERROR] DbBoards:192 - No image file URL for board B-L462E-CELL1
+2020-08-12 17:11:37,033 [INFO] ApiDb:201 - Load user favorites file C:\Users\SimpalsGarage/.stm32cubemx/favorites.boards.txt: 0 item(s)
+2020-08-12 17:11:37,033 [INFO] ApiDb:205 - User favorites Boards=[]
+2020-08-12 17:11:37,033 [INFO] DbBoards:206 - Set 0 / 0 favorites Boards
+2020-08-12 17:11:37,043 [INFO] DbBoardsDocs:81 - Found 370 boards documents
+2020-08-12 17:11:37,044 [INFO] ApiDb:226 - Save user favorites file C:\Users\SimpalsGarage/.stm32cubemx/favorites.boards.txt: 0 item(s)
+2020-08-12 17:11:37,044 [INFO] ApiDb:230 - User favorites Boards=[]
+2020-08-12 17:11:37,047 [INFO] DbBoardsPdsc:94 - Found 23 items
+2020-08-12 17:11:37,048 [INFO] DbBoardsPdsc:94 - Found 9 items
+2020-08-12 17:11:37,051 [INFO] DbBoardsPdsc:94 - Found 29 items
+2020-08-12 17:11:37,052 [INFO] DbBoardsPdsc:94 - Found 1 items
+2020-08-12 17:11:37,055 [INFO] DbBoardsPdsc:94 - Found 44 items
+2020-08-12 17:11:37,059 [INFO] DbBoardsPdsc:94 - Found 40 items
+2020-08-12 17:11:37,060 [INFO] DbBoardsPdsc:94 - Found 2 items
+2020-08-12 17:11:37,061 [INFO] DbBoardsPdsc:94 - Found 4 items
+2020-08-12 17:11:37,063 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2020-08-12 17:11:37,064 [WARN] DbBoardsPdsc:258 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2020-08-12 17:11:37,066 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2020-08-12 17:11:37,066 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2020-08-12 17:11:37,066 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2020-08-12 17:11:37,075 [INFO] DbBoardsJson:85 - JSON generation date=Thu Jul 02 16:35:57 EEST 2020 (1593696957)
+2020-08-12 17:11:37,080 [INFO] DbBoards:117 - Found 152 boards (149 are supported by CubeMX)
+2020-08-12 17:11:37,080 [WARN] DbBoards:149 - board B-G474E-DPOW1 / document id not found: 4624
+2020-08-12 17:11:37,080 [WARN] DbBoards:149 - board B-G474E-DPOW1 / document id not found: 4625
+2020-08-12 17:11:37,080 [WARN] DbBoards:127 - board B-L462E-CELL1 has no document id list !
+2020-08-12 17:11:37,080 [WARN] DbBoards:127 - board B-L475E-IOT01A2 has no document id list !
+2020-08-12 17:11:37,082 [WARN] DbBoards:127 - board NUCLEO-G491RE has no document id list !
+2020-08-12 17:11:37,082 [WARN] DbBoards:127 - board NUCLEO-H723ZG has no document id list !
+2020-08-12 17:11:37,082 [WARN] DbBoards:127 - board NUCLEO-H743ZI2 has no document id list !
+2020-08-12 17:11:37,083 [WARN] DbBoards:127 - board NUCLEO-WB55RG has no document id list !
+2020-08-12 17:11:37,083 [WARN] DbBoards:127 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2020-08-12 17:11:37,083 [WARN] DbBoards:127 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2020-08-12 17:11:37,083 [WARN] DbBoards:127 - board STEVAL-BFA001V1B has no document id list !
+2020-08-12 17:11:37,083 [WARN] DbBoards:127 - board STEVAL-BFA001V2B has no document id list !
+2020-08-12 17:11:37,083 [WARN] DbBoards:127 - board STEVAL-IDP005V1 has no document id list !
+2020-08-12 17:11:37,083 [WARN] DbBoards:127 - board STEVAL-IDP005V2 has no document id list !
+2020-08-12 17:11:37,083 [WARN] DbBoards:127 - board STEVAL-MKSBOX1V1 has no document id list !
+2020-08-12 17:11:37,084 [WARN] DbBoards:127 - board STEVAL-STWINKT1 has no document id list !
+2020-08-12 17:11:37,084 [WARN] DbBoards:127 - board STM32F401C-DISCO has no document id list !
+2020-08-12 17:11:37,085 [WARN] DbBoards:127 - board STM32F769I-DISC1 has no document id list !
+2020-08-12 17:11:37,085 [WARN] DbBoards:127 - board STM32G474E-EVAL1 has no document id list !
+2020-08-12 17:11:37,085 [WARN] DbBoards:127 - board STM32H735G-DK has no document id list !
+2020-08-12 17:11:37,086 [WARN] DbBoards:127 - board STM32H743I-EVAL2 has no document id list !
+2020-08-12 17:11:37,086 [WARN] DbBoards:127 - board STM32H747I-DISC1 has no document id list !
+2020-08-12 17:11:37,086 [WARN] DbBoards:127 - board STM32H753I-EVAL2 has no document id list !
+2020-08-12 17:11:37,086 [WARN] DbBoards:127 - board STM32L-DISCOVERY has no document id list !
+2020-08-12 17:11:37,087 [WARN] DbBoards:127 - board STM32MP157A-DK1 has no document id list !
+2020-08-12 17:11:37,087 [WARN] DbBoards:127 - board STM32MP157F-EV1 has no document id list !
+2020-08-12 17:11:37,123 [ERROR] DbBoards:192 - No image file URL for board B-L462E-CELL1
+2020-08-12 17:11:37,835 [INFO] ApiDb:201 - Load user favorites file C:\Users\SimpalsGarage/.stm32cubemx/favorites.boards.txt: 0 item(s)
+2020-08-12 17:11:37,835 [INFO] ApiDb:205 - User favorites Boards=[]
+2020-08-12 17:11:37,835 [INFO] DbBoards:206 - Set 0 / 0 favorites Boards
+2020-08-12 17:11:37,950 [INFO] DbExamplesSqlite:156 - SQLite db open (C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2020-08-12 17:11:38,483 [INFO] DbExamplesSqlite:447 - Ignored 0 examples not supported by CubeIDE
+2020-08-12 17:11:38,483 [INFO] DbExamplesSqlite:448 - Found 4362 examples active
+2020-08-12 17:11:38,483 [INFO] DbExamplesSqlite:449 - Found 128 examples obsolete
+2020-08-12 17:11:38,483 [INFO] DbExamplesSqlite:450 - Found 196 examples under development
+2020-08-12 17:11:38,483 [INFO] DbExamplesSqlite:451 - Found 132 examples not building
+2020-08-12 17:11:38,502 [INFO] DbExamplesSqlite:130 - SQLite Data Model version=2.1
+2020-08-12 17:11:38,502 [INFO] DbExamplesSqlite:131 - SQLite Configuration version=2.8
+2020-08-12 17:11:38,502 [INFO] DbExamplesSqlite:132 - SQLite generation date=2020-07-03 (1593795692)
+2020-08-12 17:11:38,502 [INFO] DbExamplesSqlite:133 - SQLite FW Pack versions=[STM32Cube_FW_F4_V1.25.0, STM32Cube_FW_F7_V1.16.0, STM32Cube_FW_G0_V1.3.0, STM32Cube_FW_G4_V1.3.0, STM32Cube_FW_H7_V1.8.0, STM32Cube_FW_L5_V1.3.0, STM32Cube_FW_WB_V1.8.0, STM32Cube_FW_WL_V0.6.0]
+2020-08-12 17:11:38,503 [INFO] DbExamples:123 - Found 4494 examples
+2020-08-12 17:11:38,868 [ERROR] DbExamples:199 - Found 288 examples with invalid data (board or MCU)
+2020-08-12 17:11:38,868 [INFO] DbExamples:215 - Found 58 boards with related examples
+2020-08-12 17:11:38,881 [INFO] DbExamples:228 - Found 44 MCUs with related examples
+2020-08-12 17:11:38,901 [INFO] ApiDb:192 - User favorites file not found: C:\Users\SimpalsGarage/.stm32cubemx/favorites.examples.txt
+2020-08-12 17:11:38,901 [INFO] DbExamples:249 - Set 0 / 0 favorites Examples
+2020-08-12 17:11:39,990 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2020-08-12 17:11:40,274 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\SimpalsGarage\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2020-08-12 17:11:40,280 [INFO] MultiScanPanel:193 - Auto-refresh data requested => check proxy status ongoing
+2020-08-12 17:11:40,282 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2020-08-12 17:11:40,829 [INFO] LoadUrlFilesThread:162 - End of LoadServerUrlFiles without Thread
+2020-08-12 17:11:40,844 [INFO] DetailPanel:331 - Set advertising image to C:/Users/SimpalsGarage/STM32Cube/Repository/\stm32cubemx-promo_image.jpg
+2020-08-12 17:11:41,218 [INFO] McuFilterPanel:245 - Update 0 favorites MCUs
+2020-08-12 17:12:46,803 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.25.0
+2020-08-12 17:12:52,727 [INFO] ApiDb:226 - Save user favorites file C:\Users\SimpalsGarage/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2020-08-12 17:12:52,727 [INFO] ApiDb:230 - User favorites MCUs=[]
