@@ -1,17 +1,8 @@
-19:08:22 **** Incremental Build of configuration Debug for project DataAllignment ****
+19:23:03 **** Incremental Build of configuration Debug for project DataAllignment ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DataAllignment.o "..\\DataAllignment.c" 
 ..\DataAllignment.c: In function 'main':
-..\DataAllignment.c:17:8: warning: unused variable 'data4' [-Wunused-variable]
-   17 |  short data4=0xABCD;
-      |        ^~~~~
-..\DataAllignment.c:16:7: warning: unused variable 'data3' [-Wunused-variable]
-   16 |  char data3=0x22;
-      |       ^~~~~
-..\DataAllignment.c:15:6: warning: unused variable 'data2' [-Wunused-variable]
-   15 |  int data2=0XFFFEEEE;
-      |      ^~~~~
-..\DataAllignment.c:14:7: warning: unused variable 'data1' [-Wunused-variable]
-   14 |  char data1=0x11;
-      |       ^~~~~
+..\DataAllignment.c:26:17: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   26 |  struct DataSet data;
+      |                 ^~~~
 gcc -o DataAllignment.exe DataAllignment.o 
