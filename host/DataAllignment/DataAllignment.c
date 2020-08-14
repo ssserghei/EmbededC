@@ -5,7 +5,6 @@
  *      Author: SimpalsGarage
  */
 
-
 #include<stdint.h>
 #include<stdio.h>
 
@@ -17,8 +16,6 @@ struct DataSet
 	short 	data4;
 
 };
-
-
 
 int main (void)
 {
@@ -32,10 +29,17 @@ int main (void)
 
 		uint8_t *ptr;
 
-		ptr=&data; //
+		ptr=(uint8_t*)&data; //
 
+		uint32_t totalSize=sizeof(struct DataSet);
 
-	printf("Memory address				Content\n");
-	printf("====================================\n");
+	printf("Memory address		Content\n"); fflush(stdout);
+	printf("====================================\n");fflush(stdout);
 
+	for (uint32_t i=0; i<totalSize; i++){
+		printf("%p		%X\n", ptr, *ptr);
+		ptr++;
+	};
+	printf("Total memory consumed by this struct variable=%I64u\n", sizeof(struct DataSet));fflush(stdout);
+	getchar();
 }

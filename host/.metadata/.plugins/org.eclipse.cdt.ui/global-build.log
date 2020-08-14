@@ -1,8 +1,4 @@
-19:23:03 **** Incremental Build of configuration Debug for project DataAllignment ****
+09:41:44 **** Incremental Build of configuration Debug for project DataAllignment ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DataAllignment.o "..\\DataAllignment.c" 
-..\DataAllignment.c: In function 'main':
-..\DataAllignment.c:26:17: warning: variable 'data' set but not used [-Wunused-but-set-variable]
-   26 |  struct DataSet data;
-      |                 ^~~~
 gcc -o DataAllignment.exe DataAllignment.o 
+Info: Nothing to build for DataAllignment

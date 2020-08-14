@@ -387,3 +387,7 @@
 2020-08-12 17:12:46,803 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.25.0
 2020-08-12 17:12:52,727 [INFO] ApiDb:226 - Save user favorites file C:\Users\SimpalsGarage/.stm32cubeide/favorites.mcus.txt: 0 item(s)
 2020-08-12 17:12:52,727 [INFO] ApiDb:230 - User favorites MCUs=[]
+2020-08-14 18:50:20,342 [INFO] Activator:178 - 
+
+
+2020-08-14 18:50:20,360 [INFO] Activator:179 - !SESSION log4j initialized
