@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  16 .debug_macro  00001c25  00000000  00000000  00010ec8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_line   000005f3  00000000  00000000  00012aed  2**0
+ 17 .debug_line   0000062a  00000000  00000000  00012aed  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    00007e65  00000000  00000000  000130e0  2**0
+ 18 .debug_str    00007e65  00000000  00000000  00013117  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  0001af45  2**0
+ 19 .comment      0000007b  00000000  00000000  0001af7c  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000058  00000000  00000000  0001afc0  2**2
+ 20 .debug_frame  00000058  00000000  00000000  0001aff8  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -157,9 +157,8 @@ int main(void)
  8000260:	697b      	ldr	r3, [r7, #20]
  8000262:	f403 5300 	and.w	r3, r3, #8192	; 0x2000
  8000266:	617b      	str	r3, [r7, #20]
+
 	// pinStatus=((pinStatus >>12) & (0x01));
-
-
 
 	//data &~
 	if(pinStatus){

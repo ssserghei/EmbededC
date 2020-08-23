@@ -1,0 +1,10 @@
+12:36:32 **** Incremental Build of configuration Debug for project NucleoF446re_PinRead ****
+make -j2 all 
+arm-none-eabi-size   NucleoF446re_PinRead.elf 
+   text	   data	    bss	    dec	    hex	filename
+    852	      8	   1568	   2428	    97c	NucleoF446re_PinRead.elf
+Finished building: default.size.stdout
+ 
+
+12:36:33 Build Finished. 0 errors, 0 warnings. (took 951ms)
+

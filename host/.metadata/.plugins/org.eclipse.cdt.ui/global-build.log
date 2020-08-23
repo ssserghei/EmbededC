@@ -1,4 +1,0 @@
-09:41:44 **** Incremental Build of configuration Debug for project DataAllignment ****
-Info: Internal Builder is used for build
-gcc -o DataAllignment.exe DataAllignment.o 
-Info: Nothing to build for DataAllignment
