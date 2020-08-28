@@ -1,10 +1,10 @@
-22:25:01 **** Incremental Build of configuration Debug for project 010led_toggle_bitfields ****
+14:50:55 **** Incremental Build of configuration Debug for project 010led_toggle_bitfields ****
 make -j2 all 
 arm-none-eabi-size   010led_toggle_bitfields.elf 
    text	   data	    bss	    dec	    hex	filename
-    760	      8	   1568	   2336	    920	010led_toggle_bitfields.elf
+    704	      8	   1568	   2280	    8e8	010led_toggle_bitfields.elf
 Finished building: default.size.stdout
  
 
-22:25:01 Build Finished. 0 errors, 0 warnings. (took 526ms)
+14:50:56 Build Finished. 0 errors, 0 warnings. (took 1s.412ms)
 

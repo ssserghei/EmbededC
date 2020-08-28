@@ -57,10 +57,11 @@ int main(void)
 
 	uint32_t pinStatus=*pPortCInReg;
 
+	pinStatus=(pinStatus >>13) & 0x1;	// PC13
 
-//	pinStatus=pinStatus & 0x2000;	//это работает
+//	pinStatus=pinStatus & 0x2000;		//это работает
 
-	pinStatus=(pinStatus >>13) & 0x1;
+
 
 
 //	pinStatus=((pinStatus >>13) & (0x01));

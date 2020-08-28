@@ -38,7 +38,11 @@ typedef struct
 /*******************************************************************************/
 // PORT_MODER	//GPIOx_MODER
 //7.4.1 GPIO port mode register (GPIOx_MODER) (x = A..H)
-
+//These bits are written by software to configure the I/O direction mode.
+//00: Input (reset state)
+//01: General purpose output mode
+//10: Alternate function mode
+//11: Analog mode
 typedef struct
 {
 	uint32_t moder0		:2;
@@ -82,6 +86,7 @@ typedef struct
 	uint16_t odr14		:1;
 	uint16_t odr15		:1;
 }GPIOx_ODR_t;
+	GPIOx_ODR_t volatile *pPortAOutReg=(GPIOx_ODR_t*) 0x40020014;
 
 
 #endif /* MAIN_H_ */
