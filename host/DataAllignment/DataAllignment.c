@@ -22,10 +22,10 @@ int main (void)
 
 	struct DataSet data;
 
-		data.data1=0x11;
-		data.data2=0XFFFFEEEE;
-		data.data3=0x22;
-		data.data4=0xABCD;
+		data.data1=0x11;		//char
+		data.data2=0XFFFFEEEE;	//int
+		data.data3=0x22;		//char
+		data.data4=0xABCD;		//short
 
 		uint8_t *ptr;
 
@@ -40,6 +40,6 @@ int main (void)
 		printf("%p		%X\n", ptr, *ptr);
 		ptr++;
 	};
-	printf("Total memory consumed by this struct variable=%I64u\n", sizeof(struct DataSet));fflush(stdout);
+	printf("Total memory consumed by this struct variable=%u\n", sizeof(struct DataSet));fflush(stdout);
 	getchar();
 }
