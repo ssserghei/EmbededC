@@ -2155,3 +2155,7 @@
 2020-08-28 21:53:43,377 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.25.0
 2020-08-28 21:53:56,761 [INFO] ApiDb:226 - Save user favorites file C:\Users\SSS_notebok/.stm32cubeide/favorites.mcus.txt: 0 item(s)
 2020-08-28 21:53:56,762 [INFO] ApiDb:230 - User favorites MCUs=[]
+2020-08-29 21:35:14,324 [INFO] Activator:178 - 
+
+
+2020-08-29 21:35:14,358 [INFO] Activator:179 - !SESSION log4j initialized

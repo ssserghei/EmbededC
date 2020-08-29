@@ -1,41 +1,46 @@
-22:12:50 **** Incremental Build of configuration Debug for project Keyboard4x4_ver2 ****
+22:44:49 **** Incremental Build of configuration Debug for project 011keypad4x4 ****
 make -j2 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 ../Src/main.c:53:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
    #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
     ^~~~~~~
-arm-none-eabi-gcc -o "Keyboard4x4_ver2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\GitHub\Embeded-C\target\Keyboard4x4_ver2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Keyboard4x4_ver2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Keyboard4x4_ver2.elf
+../Src/main.c: In function 'main':
+../Src/main.c:196:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  for(uint32_t i=0; i<500000; i++);
+  ^~~
+../Src/main.c:198:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   *pPortAOutputReg &=~(1<<5);
+   ^
+../Src/main.c:217:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   for(uint32_t i=0; i<500000; i++);
+   ^~~
+../Src/main.c:219:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+    *pPortAOutputReg &=~(1<<5);
+    ^
+../Src/main.c:235:4: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+    for(uint32_t i=0; i<500000; i++);
+    ^~~
+../Src/main.c:237:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+     *pPortAOutputReg &=~(1<<5);
+     ^
+arm-none-eabi-gcc -o "011keypad4x4.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\GitHub\Embeded-C\target\011keypad4x4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="011keypad4x4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 011keypad4x4.elf
  
-arm-none-eabi-objdump -h -S  Keyboard4x4_ver2.elf  > "Keyboard4x4_ver2.list"
-arm-none-eabi-objcopy  -O binary  Keyboard4x4_ver2.elf  "Keyboard4x4_ver2.bin"
-Finished building: Keyboard4x4_ver2.bin
+arm-none-eabi-objdump -h -S  011keypad4x4.elf  > "011keypad4x4.list"
+arm-none-eabi-objcopy  -O binary  011keypad4x4.elf  "011keypad4x4.bin"
+Finished building: 011keypad4x4.list
  
-arm-none-eabi-size   Keyboard4x4_ver2.elf 
-Finished building: Keyboard4x4_ver2.list
+arm-none-eabi-size   011keypad4x4.elf 
+Finished building: 011keypad4x4.bin
  
    text	   data	    bss	    dec	    hex	filename
-   3736	    108	   1580	   5424	   1530	Keyboard4x4_ver2.elf
+   4268	    108	   1580	   5956	   1744	011keypad4x4.elf
 Finished building: default.size.stdout
  
-22:13:08 **** Incremental Build of configuration Debug for project Keyboard4x4_ver2 ****
-make -j2 all 
-arm-none-eabi-size   Keyboard4x4_ver2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3736	    108	   1580	   5424	   1530	Keyboard4x4_ver2.elf
-Finished building: default.size.stdout
- 
-22:13:37 **** Incremental Build of configuration Debug for project Keyboard4x4_ver2 ****
-make -j2 all 
-arm-none-eabi-size   Keyboard4x4_ver2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3736	    108	   1580	   5424	   1530	Keyboard4x4_ver2.elf
-Finished building: default.size.stdout
- 
-22:29:58 **** Incremental Build of configuration Debug for project 011keypad4x4 ****
+22:44:58 **** Incremental Build of configuration Debug for project 011keypad4x4 ****
 make -j2 all 
 arm-none-eabi-size   011keypad4x4.elf 
    text	   data	    bss	    dec	    hex	filename
-   4008	    108	   1580	   5696	   1640	011keypad4x4.elf
+   4268	    108	   1580	   5956	   1744	011keypad4x4.elf
 Finished building: default.size.stdout
  

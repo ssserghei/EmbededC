@@ -101,6 +101,12 @@ GPIOB Boundary address 0x4002 0400 - 0x4002 07FF
 //Configure PA3 IO pin as input
 	*pPortAModeReg &=~(3<<6);//clear 6;7 position
 
+	//Configure PA5 IO pin as output
+		//a. clear 10 and 11 position
+		*pPortAModeReg &=~(3<<10);//*pPortAModeReg &= 0xFFFFF3FF;
+		//b make 10 position as 1 set
+		*pPortAModeReg |= (1<<10);//*pPortAModeReg |= 0x00000400;
+
 //configure mode on port B
 //Configure PB10 IO pin as output
 	*pPortBModeReg |=(1<<20);//set 20 position
@@ -183,6 +189,17 @@ Reset value: 0x0000 0000
 	*pPortAOutputReg &=~(1<<8);	//R1
 */
 
+	uint8_t a=0;
+while(a<3){
+	//turn ONN the LED
+		*pPortAOutputReg |=(1<<5);
+	for(uint32_t i=0; i<500000; i++);
+	//turn OFF LED
+		*pPortAOutputReg &=~(1<<5);
+	for(uint32_t i=0; i<500000; i++);
+a++;
+}//end while
+
 
 while(1){
 //verifed buttons on ROW1
@@ -192,13 +209,37 @@ while(1){
 
 	uint32_t C1=(*pPortBInputReg >> 3) & 0x1;	//C1-PB3
 	if(!C1) {
-		printf("But 1 =ON\n");//fflush(stdout);
+
+		uint8_t a=0;
+	while(a<1){
+		//turn ONN the LED
+			*pPortAOutputReg |=(1<<5);
+		for(uint32_t i=0; i<500000; i++);
+		//turn OFF LED
+			*pPortAOutputReg &=~(1<<5);
+		for(uint32_t i=0; i<500000; i++);
+	a++;
+	}//end while
+
+//		printf("But 1 =ON\n");//fflush(stdout);
 //	for(uint32_t i=0; i<300000; i++);
 	};//end if
 
 	uint32_t C2=(*pPortAInputReg >> 10) & 0x1;	//C2-PA10
 	if(!C2){
-		printf("But 2 =ON\n");//fflush(stdout);
+
+		uint8_t a=0;
+		while(a<2){
+			//turn ONN the LED
+				*pPortAOutputReg |=(1<<5);
+			for(uint32_t i=0; i<500000; i++);
+			//turn OFF LED
+				*pPortAOutputReg &=~(1<<5);
+			for(uint32_t i=0; i<500000; i++);
+		a++;
+		}//end while
+
+//		printf("But 2 =ON\n");//fflush(stdout);
 //	for(uint32_t i=0; i<300000; i++);
 	};//end if
 
@@ -210,10 +251,17 @@ while(1){
 
 	uint32_t C4=(*pPortAInputReg >> 3) & 0x1;	//C4-PA3
 	if(!C4){
+
 			printf("But A =ON\n");//fflush(stdout);
 	//	for(uint32_t i=0; i<300000; i++);
 		};//end if
 
+
+	//turn OFF LED
+		//	*pPortAOutputReg &=~(1<<5);
+
+	//turn ONN the LED
+//				*pPortAOutputReg |=(1<<5);
 };//end while
 
 }//end MAIN
