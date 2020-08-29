@@ -1,0 +1,10 @@
+22:13:37 **** Incremental Build of configuration Debug for project Keyboard4x4_ver2 ****
+make -j2 all 
+arm-none-eabi-size   Keyboard4x4_ver2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3736	    108	   1580	   5424	   1530	Keyboard4x4_ver2.elf
+Finished building: default.size.stdout
+ 
+
+22:13:37 Build Finished. 0 errors, 0 warnings. (took 663ms)
+

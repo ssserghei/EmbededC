@@ -59,8 +59,7 @@ R4-	PB5---->(*)(0)(#)(D)
 int main(void)
 {
   printf("Hello Serghei\n");
-  printf("Hello Serghei2\n");
-  printf("Hello Serghei3\n");
+
 /*configure  clock on GPIOA & GPIOB
 6.3.10 RCC AHB1 peripheral clock enable register (RCC_AHB1ENR)
 Address offset: 0x30
@@ -73,7 +72,6 @@ Boundary address 0x4002 3800 - 0x4002 3BFF RCC
   	  *pClockCtrlReg |= (1<<0); 	//Enable Clock on PortA
   	  *pClockCtrlReg |= (1<<1);		//Enable Clock on PortB
 	  *pClockCtrlReg |= (1<<2);		//Enable Clock on PortC
-
 /*configure port mode on GPIO GPIOA & GPIOB
 7.4.1 GPIO port mode register (GPIOx_MODER) (x = A..H)
 These bits are written by software to configure the I/O direction mode.
@@ -107,15 +105,20 @@ GPIOB Boundary address 0x4002 0400 - 0x4002 07FF
 //Configure PB10 IO pin as output
 	*pPortBModeReg |=(1<<20);//set 20 position
 //Configure PB4 IO pin as output
-	*pPortBModeReg |=(1<<8);//set 8 position
+	*pPortBModeReg &=~(1<<9);	//clear 9 position
+	*pPortBModeReg |=(1<<8);	//set 8 position
 //Configure PB5 IO pin as output
 	*pPortBModeReg |=(1<<10);//set 10 position
 //Configure PB3 IO pin as input
 	*pPortBModeReg &=~(3<<6);//clear 6;7 position
 
-
 /*	configure pull-up/pull-down register on inputs
  * 7.4.4 GPIO port pull-up/pull-down register (GPIOx_PUPDR) (x = A..H)
+ * These bits are written by software to configure the I/O pull-up or pull-down
+00: No pull-up, pull-down
+01: Pull-up
+10: Pull-down
+11: Reserved
 Address offset: 0x0C
 Reset values:
 • 0x6400 0000 for port A
@@ -127,16 +130,14 @@ GPIOB Boundary address 0x4002 0400 - 0x4002 07FF
 */
 	uint32_t volatile *const pPortApullUpDownlReg=(uint32_t*)(0x40020000+0x0C);
 	uint32_t volatile *const pPortBpullUpDownlReg=(uint32_t*)(0x40020400+0x0C);
-
 	//Configure PA10 IO pin with pull-up
-		*pPortApullUpDownlReg |=(1<<20);	//clear 20;21 position
+		*pPortApullUpDownlReg |=(1<<20);	//set 21 position
 	//Configure PA2 IO pin with pull-up
-		*pPortApullUpDownlReg |=(1<<4);		//clear 4;5 position
+		*pPortApullUpDownlReg |=(1<<4);		//set 4 position
 	//Configure PA3 IO pin with pull-up
-		*pPortApullUpDownlReg |=(1<<6);		//clear 6;7 position
+		*pPortApullUpDownlReg |=(1<<6);		//set 6 position
 	//Configure PB3 IO pin with pull-up
-		*pPortBpullUpDownlReg |=(1<<6);		//clear 6;7 position
-
+		*pPortBpullUpDownlReg |=(1<<6);		//clear 6 position
 
 /*	configure INPUT REG
  * 7.4.5 GPIO port input data register (GPIOx_IDR) (x = A..H)
@@ -147,11 +148,10 @@ GPIOB Boundary address 0x4002 0400 - 0x4002 07FF
 		uint32_t volatile *const pPortBInputReg=(uint32_t*)(0x40020400+0x10);
 
 
-		uint32_t C1=(*pPortBInputReg >> 3) & 0x1;	//C1-PB3
-		uint32_t C2=(*pPortAInputReg >> 10) & 0x1;	//C2-PA10
-		uint32_t C3=(*pPortAInputReg >> 2) & 0x1;	//C3-PA2
-		uint32_t C4=(*pPortAInputReg >> 3) & 0x1;	//C4-PA3
-
+//		uint32_t C1=(*pPortBInputReg >> 3) & 0x1;	//C1-PB3
+//		uint32_t C2=(*pPortAInputReg >> 10) & 0x1;	//C2-PA10
+//		uint32_t C3=(*pPortAInputReg >> 2) & 0x1;	//C3-PA2
+//		uint32_t C4=(*pPortAInputReg >> 3) & 0x1;	//C4-PA3
 
 /*Configure OUTPUT REG
  * 7.4.6 GPIO port output data register (GPIOx_ODR) (x = A..H)
@@ -171,35 +171,52 @@ Reset value: 0x0000 0000
 	*pPortBOutputReg |=(1<<5);	//
 //Configure PA8 IO pin as 1
 	*pPortAOutputReg |=(1<<8);	//
-
+/*
 //set outputs on LOW
 //Configure PB10 IO pin as 0
-	*pPortBOutputReg &=~(1<<10);//
+	*pPortBOutputReg &=~(1<<10);//R2
 //Configure PB4 IO pin as 0
-	*pPortBOutputReg &=~(1<<4);	//
+	*pPortBOutputReg &=~(1<<4);	//R3
 //Configure PB5 IO pin as 0
-	*pPortBOutputReg &=~(1<<5);	//
-//Configure PA8 IO pin as output
-	*pPortAOutputReg &=~(1<<8);	//
+	*pPortBOutputReg &=~(1<<5);	//R4
+//Configure PA8 IO pin as 0
+	*pPortAOutputReg &=~(1<<8);	//R1
+*/
 
-	printf("Hello Serghei4\n");
 
 while(1){
+//verifed buttons on ROW1
+	//Configure PA8 IO pin as 0 /Row 1
+	*pPortAOutputReg &=~(1<<8);	//R1
+	//verifed But1
+
+	uint32_t C1=(*pPortBInputReg >> 3) & 0x1;	//C1-PB3
 	if(!C1) {
-		printf("C1=ON\n");fflush(stdout);
-	}else if(!C2){
-		printf("C2=ON");fflush(stdout);
-	}else if(!C3){
-		printf("C3=ON");fflush(stdout);
-	}else if(!C4){
-		printf("C4=ON");fflush(stdout);
+		printf("But 1 =ON\n");//fflush(stdout);
+//	for(uint32_t i=0; i<300000; i++);
 	};//end if
+
+	uint32_t C2=(*pPortAInputReg >> 10) & 0x1;	//C2-PA10
+	if(!C2){
+		printf("But 2 =ON\n");//fflush(stdout);
+//	for(uint32_t i=0; i<300000; i++);
+	};//end if
+
+	uint32_t C3=(*pPortAInputReg >> 2) & 0x1;	//C3-PA2
+	if(!C3){
+			printf("But 3 =ON\n");//fflush(stdout);
+	//	for(uint32_t i=0; i<300000; i++);
+		};//end if
+
+	uint32_t C4=(*pPortAInputReg >> 3) & 0x1;	//C4-PA3
+	if(!C4){
+			printf("But A =ON\n");//fflush(stdout);
+	//	for(uint32_t i=0; i<300000; i++);
+		};//end if
+
 };//end while
 
-
-	/* Loop forever */
-	for(;;);
-}
+}//end MAIN
 
 
 
