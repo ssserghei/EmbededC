@@ -242,7 +242,7 @@ GPIOB Boundary address 0x4002 0400 - 0x4002 07FF
  80002ec:	6a7b      	ldr	r3, [r7, #36]	; 0x24
  80002ee:	601a      	str	r2, [r3, #0]
 	//Configure PB3 IO pin with pull-up
-		*pPortBpullUpDownlReg |=(1<<6);		//clear 6 position
+		*pPortBpullUpDownlReg |=(1<<6);		//set 6 position
  80002f0:	6a3b      	ldr	r3, [r7, #32]
  80002f2:	681b      	ldr	r3, [r3, #0]
  80002f4:	f043 0240 	orr.w	r2, r3, #64	; 0x40

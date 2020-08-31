@@ -20,7 +20,6 @@
  * a fost creat pentru testerea tastaturii 4*4
  */
 
-
 /*Conecctions to nucleo BRD
  *
  * rows	-	output
@@ -143,7 +142,7 @@ GPIOB Boundary address 0x4002 0400 - 0x4002 07FF
 	//Configure PA3 IO pin with pull-up
 		*pPortApullUpDownlReg |=(1<<6);		//set 6 position
 	//Configure PB3 IO pin with pull-up
-		*pPortBpullUpDownlReg |=(1<<6);		//clear 6 position
+		*pPortBpullUpDownlReg |=(1<<6);		//set 6 position
 
 /*	configure INPUT REG
  * 7.4.5 GPIO port input data register (GPIOx_IDR) (x = A..H)
