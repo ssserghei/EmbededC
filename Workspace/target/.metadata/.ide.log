@@ -2429,3 +2429,13 @@
 2020-08-31 21:06:59,075 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.25.0
 2020-08-31 21:07:04,774 [INFO] ApiDb:226 - Save user favorites file C:\Users\SSS_notebok/.stm32cubeide/favorites.mcus.txt: 0 item(s)
 2020-08-31 21:07:04,774 [INFO] ApiDb:230 - User favorites MCUs=[]
+2020-09-02 22:00:32,079 [INFO] Activator:178 - 
+
+
+2020-09-02 22:00:32,224 [INFO] Activator:179 - !SESSION log4j initialized
+2020-09-02 22:45:42,160 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "SWV client thread" java.lang.NullPointerException
+2020-09-02 22:45:42,165 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVPlugin.debugTrace(SWVPlugin.java:93)
+2020-09-02 22:45:42,168 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.TRACE(SWVClient.java:789)
+2020-09-02 22:45:42,172 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.readByte(SWVClient.java:288)
+2020-09-02 22:45:42,175 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.getNextByte(SWVClient.java:271)
+2020-09-02 22:45:42,178 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:316)

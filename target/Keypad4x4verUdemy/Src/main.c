@@ -37,7 +37,7 @@ R4-	PB5---->(*)(0)(#)(D)
 
 void delay(void)
 {
-
+	for(uint32_t i=0; i<500000; i++);
 }
 
 int main(void)
@@ -101,6 +101,8 @@ int main(void)
 
 //**********BEGIN***********
 	printf("proverca\n");
+
+while(1){
 //***********Make all (outputs) rows HIGH
 	//Configure PB10 IO pin as 1
 		*pPortBOutputReg |=(1<<10);	//
@@ -170,7 +172,5 @@ int main(void)
 						delay();
 						printf("pressed key B\n");
 					}//endIF
-
-
-
+}//end while
 }//End MAIN
