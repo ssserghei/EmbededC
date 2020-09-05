@@ -2439,3 +2439,17 @@
 2020-09-02 22:45:42,172 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.readByte(SWVClient.java:288)
 2020-09-02 22:45:42,175 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.getNextByte(SWVClient.java:271)
 2020-09-02 22:45:42,178 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:316)
+2020-09-03 21:06:12,284 [INFO] Activator:178 - 
+
+
+2020-09-03 21:06:12,458 [INFO] Activator:179 - !SESSION log4j initialized
+2020-09-03 22:07:32,318 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "SWV client thread" java.lang.NullPointerException
+2020-09-03 22:07:32,334 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVPlugin.debugTrace(SWVPlugin.java:93)
+2020-09-03 22:07:32,350 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.TRACE(SWVClient.java:789)
+2020-09-03 22:07:32,350 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.readByte(SWVClient.java:288)
+2020-09-03 22:07:32,365 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.getNextByte(SWVClient.java:271)
+2020-09-03 22:07:32,381 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:316)
+2020-09-05 22:36:15,195 [INFO] Activator:178 - 
+
+
+2020-09-05 22:36:15,257 [INFO] Activator:179 - !SESSION log4j initialized
