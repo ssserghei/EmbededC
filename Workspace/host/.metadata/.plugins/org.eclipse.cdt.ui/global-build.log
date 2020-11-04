@@ -1,2 +1,4 @@
-Info: Nothing to build for ArraySwapping
+23:51:13 **** Incremental Build of configuration Debug for project ArraySwapping ****
+Info: Internal Builder is used for build
+gcc -o ArraySwapping.exe ArraySwapping.o 
 Info: Nothing to build for ArraySwapping
