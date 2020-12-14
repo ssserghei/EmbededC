@@ -37,11 +37,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  16 .debug_macro  00001c1f  00000000  00000000  00010ed8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_line   0000062a  00000000  00000000  00012af7  2**0
+ 17 .debug_line   0000062c  00000000  00000000  00012af7  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    00007e55  00000000  00000000  00013121  2**0
+ 18 .debug_str    00007e55  00000000  00000000  00013123  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  0001af76  2**0
+ 19 .comment      0000007b  00000000  00000000  0001af78  2**0
                   CONTENTS, READONLY
  20 .debug_frame  00000058  00000000  00000000  0001aff4  2**2
                   CONTENTS, READONLY, DEBUGGING
@@ -153,10 +153,7 @@ int main(void)
  800025c:	681b      	ldr	r3, [r3, #0]
  800025e:	603b      	str	r3, [r7, #0]
 
-
-//	pinStatus=pinStatus & 0x2000;	//это работает
-
-	pinStatus=(pinStatus >>13) & 0x1;
+	pinStatus=(pinStatus >>13) & 0x1;	// PC13
  8000260:	683b      	ldr	r3, [r7, #0]
  8000262:	0b5b      	lsrs	r3, r3, #13
  8000264:	f003 0301 	and.w	r3, r3, #1

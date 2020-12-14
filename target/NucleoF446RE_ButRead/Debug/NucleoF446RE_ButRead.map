@@ -629,9 +629,9 @@ OUTPUT(NucleoF446RE_ButRead.elf elf32-littlearm)
  .debug_macro   0x0000000000001ac4       0x16 Src/main.o
  .debug_macro   0x0000000000001ada      0x145 Src/main.o
 
-.debug_line     0x0000000000000000      0x62a
- .debug_line    0x0000000000000000      0x5a6 Src/main.o
- .debug_line    0x00000000000005a6       0x84 Startup/startup_stm32f446retx.o
+.debug_line     0x0000000000000000      0x62c
+ .debug_line    0x0000000000000000      0x5a8 Src/main.o
+ .debug_line    0x00000000000005a8       0x84 Startup/startup_stm32f446retx.o
 
 .debug_str      0x0000000000000000     0x7e55
  .debug_str     0x0000000000000000     0x7e24 Src/main.o

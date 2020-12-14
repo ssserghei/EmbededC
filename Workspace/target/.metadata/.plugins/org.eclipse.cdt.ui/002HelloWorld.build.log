@@ -15,3 +15,6 @@ arm-none-eabi-size   002HelloWorld.elf
    4908	    108	   1580	   6596	   19c4	002HelloWorld.elf
 Finished building: default.size.stdout
  
+
+23:07:25 Build Finished. 0 errors, 0 warnings. (took 8s.824ms)
+
