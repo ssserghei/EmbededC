@@ -15,3 +15,6 @@ arm-none-eabi-size   BluePill_AllON.elf
    4468	    116	   1756	   6340	   18c4	BluePill_AllON.elf
 Finished building: default.size.stdout
  
+
+21:59:20 Build Finished. 0 errors, 0 warnings. (took 2s.560ms)
+
