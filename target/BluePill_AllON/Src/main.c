@@ -2,11 +2,11 @@
 /*Proiectul este realizat pe cablajul BluePill (MCU stm32f103c8t6)
  * In acest proiect voi seta in 1 toate pinurile MCU*/
 /*Documentation Home page
- * 	https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html
+https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html
  *Datasheet
- *	https://www.st.com/resource/en/datasheet/stm32f103c8.pdf
+https://www.st.com/resource/en/datasheet/stm32f103c8.pdf
  * Reference manual
- * 	https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-st
+https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf
  *
  * */
 
@@ -46,3 +46,6 @@ int main(void)
 	/* Loop forever */
 	for(;;);
 }
+
+
+
