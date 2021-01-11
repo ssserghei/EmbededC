@@ -1,75 +1,34 @@
-21:59:18 **** Incremental Build of configuration Debug for project BluePill_AllON ****
+23:29:41 **** Build of configuration Debug for project BluePill_LEDBlincPointer ****
 make -j2 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "BluePill_AllON.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\GitHub\Embeded-C\target\BluePill_AllON\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BluePill_AllON.map" -Wl,--gc-sections -static -specs=rdimon.specs -lc -lrdimon --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: BluePill_AllON.elf
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103t8ux.d" -MT"Startup/startup_stm32f103t8ux.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103t8ux.o" "../Startup/startup_stm32f103t8ux.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103T8Ux -DSTM32 -DSTM32F1 -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:120:11: warning: unused variable 'pPortBOutReg' [-Wunused-variable]
+ uint32_t *pPortBOutReg = (uint32_t*)0x40010C0C;
+           ^~~~~~~~~~~~
+../Src/main.c:119:11: warning: unused variable 'pPortAOutReg' [-Wunused-variable]
+ uint32_t *pPortAOutReg = (uint32_t*)0x4001080C;
+           ^~~~~~~~~~~~
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103T8Ux -DSTM32 -DSTM32F1 -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103T8Ux -DSTM32 -DSTM32F1 -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "BluePill_LEDBlincPointer.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\GitHub\Embeded-C\target\BluePill_LEDBlincPointer\STM32F103T8UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BluePill_LEDBlincPointer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BluePill_LEDBlincPointer.elf
  
-arm-none-eabi-objdump -h -S  BluePill_AllON.elf  > "BluePill_AllON.list"
-arm-none-eabi-objcopy  -O binary  BluePill_AllON.elf  "BluePill_AllON.bin"
-Finished building: BluePill_AllON.list
-Finished building: BluePill_AllON.bin
- 
-arm-none-eabi-size   BluePill_AllON.elf 
- 
+arm-none-eabi-size   BluePill_LEDBlincPointer.elf 
+arm-none-eabi-objdump -h -S  BluePill_LEDBlincPointer.elf  > "BluePill_LEDBlincPointer.list"
    text	   data	    bss	    dec	    hex	filename
-   4468	    116	   1756	   6340	   18c4	BluePill_AllON.elf
+   3616	    108	   1580	   5304	   14b8	BluePill_LEDBlincPointer.elf
 Finished building: default.size.stdout
+Finished building: BluePill_LEDBlincPointer.list
  
-23:18:25 **** Clean-only build of configuration Debug for project BluePill_AllON ****
-make -j2 clean 
-rm -rf *
+arm-none-eabi-objcopy  -O binary  BluePill_LEDBlincPointer.elf  "BluePill_LEDBlincPointer.bin"
  
-23:18:30 **** Incremental Build of configuration Debug for project BluePill_AllON ****
+Finished building: BluePill_LEDBlincPointer.bin
+ 
+23:30:14 **** Incremental Build of configuration Debug for project BluePill_LEDBlincPointer ****
 make -j2 all 
-arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c8tx.d" -MT"Startup/startup_stm32f103c8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c8tx.o" "../Startup/startup_stm32f103c8tx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "BluePill_AllON.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\GitHub\Embeded-C\target\BluePill_AllON\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BluePill_AllON.map" -Wl,--gc-sections -static -specs=rdimon.specs -lc -lrdimon --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: BluePill_AllON.elf
- 
-arm-none-eabi-size   BluePill_AllON.elf 
-arm-none-eabi-objdump -h -S  BluePill_AllON.elf  > "BluePill_AllON.list"
+arm-none-eabi-size   BluePill_LEDBlincPointer.elf 
    text	   data	    bss	    dec	    hex	filename
-   4468	    116	   1756	   6340	   18c4	BluePill_AllON.elf
-Finished building: default.size.stdout
-Finished building: BluePill_AllON.list
- 
-arm-none-eabi-objcopy  -O binary  BluePill_AllON.elf  "BluePill_AllON.bin"
- 
-Finished building: BluePill_AllON.bin
- 
-23:18:51 **** Incremental Build of configuration Debug for project BluePill_AllON ****
-make -j2 all 
-arm-none-eabi-size   BluePill_AllON.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4468	    116	   1756	   6340	   18c4	BluePill_AllON.elf
-Finished building: default.size.stdout
- 
-23:20:15 **** Incremental Build of configuration Debug for project BluePill_AllON ****
-make -j2 all 
-arm-none-eabi-size   BluePill_AllON.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4468	    116	   1756	   6340	   18c4	BluePill_AllON.elf
-Finished building: default.size.stdout
- 
-23:26:26 **** Incremental Build of configuration Debug for project BluePill_AllON ****
-make -j2 all 
-arm-none-eabi-size   BluePill_AllON.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4468	    116	   1756	   6340	   18c4	BluePill_AllON.elf
-Finished building: default.size.stdout
- 
-23:28:09 **** Incremental Build of configuration Debug for project BluePill_AllON ****
-make -j2 all 
-arm-none-eabi-size   BluePill_AllON.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4468	    116	   1756	   6340	   18c4	BluePill_AllON.elf
-Finished building: default.size.stdout
- 
-23:31:06 **** Incremental Build of configuration Debug for project BluePill_AllON ****
-make -j2 all 
-arm-none-eabi-size   BluePill_AllON.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4468	    116	   1756	   6340	   18c4	BluePill_AllON.elf
+   3616	    108	   1580	   5304	   14b8	BluePill_LEDBlincPointer.elf
 Finished building: default.size.stdout
  

@@ -52,6 +52,18 @@ int main(void)
 
 	uint32_t pinStatus=*pPortCInReg;
 
+
+	while(1){
+		//turn on LED
+				*pPortAOutReg |=(1<<5);
+		for(uint32_t i=0; i<500000; i++);
+		//turn off the LED
+					*pPortAOutReg &=~(1<<5);
+		for(uint32_t i=0; i<500000; i++);
+		}//end while
+
+
+/*
 	while(1){
 	//read the pin status of the pin PC13 //7.4.5 GPIO port input data register (GPIOx_IDR) (x = A..H)
 	//uint8_t pinStatus=(uint8_t)(pinStatus >>12) & 0x1FFF); /////.......
@@ -73,6 +85,8 @@ int main(void)
 	//*pPortAOutReg |=(1<<5);//*pPortAOutReg |=0x00000020;
 
 	}//end of while
+
+*/
 }//endof main
 
 /*Adres of the clock control register (AHB1ENR)
