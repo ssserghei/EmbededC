@@ -127,11 +127,11 @@ uint32_t *pPortCOutReg	= (uint32_t*)0x4001100C;
 
 //Configure the mode of PORT-----------------------------------------------
 //Configure Mode of PORTA
-*pPortAModeLowReg	&=0x22222222;	//clear PA1;PA2;PA3;PA4;PA5;PA6;PA7;
-*pPortAModeLowReg	|=0x22222222;	//set	PA1;PA2;PA3;PA4;PA5;PA6;PA7;
+*pPortAModeLowReg	&=0x2222222F;	//clear PA1;PA2;PA3;PA4;PA5;PA6;PA7;
+*pPortAModeLowReg	|=0x22222220;	//set	PA1;PA2;PA3;PA4;PA5;PA6;PA7;
 
 *pPortAModeHighReg	&=0x2FF22222;	//clear	PA8;PA9;PA10;PA11;PA12;		PA15.
-*pPortAModeHighReg	|=0x2FF22222;	//set	PA8;PA9;PA10;PA11;PA12;		PA15.
+*pPortAModeHighReg	|=0x20022222;	//set	PA8;PA9;PA10;PA11;PA12;		PA15.
 
 //Configure Mode of PORTB
 *pPortBModeLowReg	&=0x22222F22;	//clear	PB1;	PB3;PB4;PB5;PB6;PB7;
@@ -140,8 +140,7 @@ uint32_t *pPortCOutReg	= (uint32_t*)0x4001100C;
 *pPortBModeHighReg	&=0x22222222;	//clear	PB8;PB9;PB10;PB11;PB12;PB13;PB14;PB15.
 *pPortBModeHighReg	|=0x22222222;	//set	PB8;PB9;PB10;PB11;PB12;PB13;PB14;PB15.
 
-//Configure Mode of PORTC
-//no pins on PCB
+//Configure Mode of PORTC	//no pins on PCB
 //*pPortCModeLowReg	&=0x222FFFFF;	//clear
 //*pPortCModeLowReg	|=0x22200000;	//set
 
@@ -149,9 +148,24 @@ uint32_t *pPortCOutReg	= (uint32_t*)0x4001100C;
 *pPortCModeHighReg	|=0x22200000;	//set	PC13;PC14;PC15
 
 
-//Configure PC13 as low
+//Enable LED (Configure PC13 as low)
 *pPortCOutReg	&=0xFFFFDFFF;	//set	PC13 as low (enable LED)
 *pPortCOutReg	|=0x2000;		//set	PC13 as high (disable LED)
+
+//PORTA; Configure PA1;PA2;PA3;PA4;PA5;PA6;PA7;PA8;PA9;PA10;PA11;PA12		PA15; as HIGH
+*pPortAOutReg |=0x9FFF;
+//PORTA; Configure  PA1;PA2;PA3;PA4;PA5;PA6;PA7;PA8;PA9;PA10;PA11;PA12		PA15; as LOW
+*pPortAOutReg &=0x6000;
+
+//PORTB; PB1; Configure	PB3;PB4;PB5;PB6;PB7;PB8;PB9;PB10;PB11;PB12;PB13;PB14;PB15  as HIGH
+*pPortBOutReg |=0x0000;
+//PORTB; Configure PB3;PB4;PB5;PB6;PB7;PB8;PB9;PB10;PB11;PB12;PB13;PB14;PB15 as LOW
+*pPortBOutReg &=0xFFFF;
+
+//PORTC; Configure as HIGH
+*pPortCOutReg |=0x0000;
+//PORTC; Configure as LOW
+*pPortCOutReg &=0xFFFF;
 
 	initialise_monitor_handles();
 	printf("Hello World\n");
@@ -159,10 +173,10 @@ uint32_t *pPortCOutReg	= (uint32_t*)0x4001100C;
 while(1){
 //turn ONN the LED
 	*pPortCOutReg	&=0xFFFFDFFF;	//set	PC13 as low (enable LED)
-	for(uint32_t i=0; i<500000; i++);
+	for(uint32_t i=0; i<100000; i++);
 //turn OFF LED
 	*pPortCOutReg	|=0x2000;		//set	PC13 as high (disable LED)
-	for(uint32_t i=0; i<500000; i++);
+	for(uint32_t i=0; i<100000; i++);
 	}//end while
 
 }//end main
