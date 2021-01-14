@@ -127,8 +127,8 @@ uint32_t *pPortCOutReg	= (uint32_t*)0x4001100C;
 
 //Configure the mode of PORT-----------------------------------------------
 //Configure Mode of PORTA
-*pPortAModeLowReg	&=0x2222222F;	//clear PA1;PA2;PA3;PA4;PA5;PA6;PA7;
-*pPortAModeLowReg	|=0x22222220;	//set	PA1;PA2;PA3;PA4;PA5;PA6;PA7;
+*pPortAModeLowReg	&=0x22222222;	//clear PA0;PA1;PA2;PA3;PA4;PA5;PA6;PA7;
+*pPortAModeLowReg	|=0x22222222;	//set	PA0;PA1;PA2;PA3;PA4;PA5;PA6;PA7;
 
 *pPortAModeHighReg	&=0x2FF22222;	//clear	PA8;PA9;PA10;PA11;PA12;		PA15.
 *pPortAModeHighReg	|=0x20022222;	//set	PA8;PA9;PA10;PA11;PA12;		PA15.
@@ -152,21 +152,23 @@ uint32_t *pPortCOutReg	= (uint32_t*)0x4001100C;
 *pPortCOutReg	&=0xFFFFDFFF;	//set	PC13 as low (enable LED)
 *pPortCOutReg	|=0x2000;		//set	PC13 as high (disable LED)
 
-//PORTA; Configure PA1;PA2;PA3;PA4;PA5;PA6;PA7;PA8;PA9;PA10;PA11;PA12		PA15; as HIGH
+
+//**************************************************************
+//PORTA; Configure PA0;PA1;PA2;PA3;PA4;PA5;PA6;PA7;PA8;PA9;PA10;PA11;PA12		PA15; as HIGH
 *pPortAOutReg |=0x9FFF;
-//PORTA; Configure  PA1;PA2;PA3;PA4;PA5;PA6;PA7;PA8;PA9;PA10;PA11;PA12		PA15; as LOW
+//PORTA; Configure  PA0;PA1;PA2;PA3;PA4;PA5;PA6;PA7;PA8;PA9;PA10;PA11;PA12		PA15; as LOW
 *pPortAOutReg &=0x6000;
 
 //PORTB; PB1; Configure	PB3;PB4;PB5;PB6;PB7;PB8;PB9;PB10;PB11;PB12;PB13;PB14;PB15  as HIGH
-*pPortBOutReg |=0x0000;
+*pPortBOutReg |=0xFFF8;
 //PORTB; Configure PB3;PB4;PB5;PB6;PB7;PB8;PB9;PB10;PB11;PB12;PB13;PB14;PB15 as LOW
-*pPortBOutReg &=0xFFFF;
+*pPortBOutReg &=0x0007;
 
-//PORTC; Configure as HIGH
-*pPortCOutReg |=0x0000;
-//PORTC; Configure as LOW
-*pPortCOutReg &=0xFFFF;
-
+//PORTC; Configure as HIGH PC13;PC14;PC15
+*pPortCOutReg |=0xE000;
+//PORTC; Configure as LOW PC13;PC14;PC15
+*pPortCOutReg &=0x1FFF;
+//*************************************************************************
 	initialise_monitor_handles();
 	printf("Hello World\n");
 	/* Loop forever */
