@@ -227,7 +227,7 @@ uint32_t *pPortCOutReg	= (uint32_t*)0x4001100C;
 
 
 //**************************************************************
-//PORTA; Configure PA0;PA1;PA2;PA3;PA4;PA5;PA6;PA7;PA8;PA9;PA10;PA11;PA12		PA15; as HIGH
+//PORTA; Configure PA0;PA1;PA2;PA3;PA4;PA5;PA6;PA7;PA8;!PA9;!PA10;!PA11;PA12		PA15; as HIGH
 *pPortAOutReg |=0x9FFF;
  8000242:	68fb      	ldr	r3, [r7, #12]
  8000244:	681b      	ldr	r3, [r3, #0]
@@ -235,7 +235,7 @@ uint32_t *pPortCOutReg	= (uint32_t*)0x4001100C;
  800024a:	f043 03ff 	orr.w	r3, r3, #255	; 0xff
  800024e:	68fa      	ldr	r2, [r7, #12]
  8000250:	6013      	str	r3, [r2, #0]
-//PORTA; Configure  PA0;PA1;PA2;PA3;PA4;PA5;PA6;PA7;PA8;PA9;PA10;PA11;PA12		PA15; as LOW
+//PORTA; Configure  PA0;PA1;PA2;PA3;PA4;PA5;PA6;PA7;PA8;PA9;PA10;PA11;!PA12		!PA15; as LOW
 *pPortAOutReg &=0x6000;
  8000252:	68fb      	ldr	r3, [r7, #12]
  8000254:	681b      	ldr	r3, [r3, #0]
@@ -243,7 +243,7 @@ uint32_t *pPortCOutReg	= (uint32_t*)0x4001100C;
  800025a:	68fb      	ldr	r3, [r7, #12]
  800025c:	601a      	str	r2, [r3, #0]
 
-//PORTB; PB1; Configure	PB3;PB4;PB5;PB6;PB7;PB8;PB9;PB10;PB11;PB12;PB13;PB14;PB15  as HIGH
+//PORTB; PB1; Configure	*PB3;PB4;PB5;PB6;PB7;PB8;PB9;PB10;PB11;PB12;PB13;PB14;PB15  as HIGH
 *pPortBOutReg |=0xFFF8;
  800025e:	68bb      	ldr	r3, [r7, #8]
  8000260:	681b      	ldr	r3, [r3, #0]
@@ -251,7 +251,7 @@ uint32_t *pPortCOutReg	= (uint32_t*)0x4001100C;
  8000266:	f043 03f8 	orr.w	r3, r3, #248	; 0xf8
  800026a:	68ba      	ldr	r2, [r7, #8]
  800026c:	6013      	str	r3, [r2, #0]
-//PORTB; Configure PB3;PB4;PB5;PB6;PB7;PB8;PB9;PB10;PB11;PB12;PB13;PB14;PB15 as LOW
+//PORTB; Configure PB3;*PB4;PB5;PB6;PB7;PB8;PB9;PB10;PB11;PB12;PB13;PB14;PB15 as LOW
 *pPortBOutReg &=0x0007;
  800026e:	68bb      	ldr	r3, [r7, #8]
  8000270:	681b      	ldr	r3, [r3, #0]
