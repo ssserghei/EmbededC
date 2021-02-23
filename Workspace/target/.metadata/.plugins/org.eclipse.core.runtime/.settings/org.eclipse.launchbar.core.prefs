@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:010led_toggle_bitfields,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:011keypad4x4,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Keypad4x4verUdemy,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NucleoF446RE_ButRead,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NucleoF446re_LED_ON Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002HelloWorld,org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NucleoF446re_PinRead,org.eclipse.launchbar.core.descriptorType.default\:BluePill_LEDBlincPointer.elf,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BluePill_AllON Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BluePill_LEDBlincPointer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BluePill_AllON_Bitwise Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:010led_toggle_bitfields,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:011keypad4x4,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Keypad4x4verUdemy,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NucleoF446RE_ButRead,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NucleoF446re_LED_ON Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002HelloWorld,org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NucleoF446re_PinRead,org.eclipse.launchbar.core.descriptorType.default\:BluePill_LEDBlincPointer.elf,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BluePill_AllON Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BluePill_AllON_Bitwise Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Inline_1,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BluePill_LEDBlincPointer Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002HelloWorld/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002HelloWorld/activeLaunchTarget=null\:---
@@ -10,7 +10,8 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:010led_toggle_bitfields/activeL
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:011keypad4x4/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BluePill_AllON\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BluePill_AllON_Bitwise\ Debug/activeLaunchMode=run
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BluePill_LEDBlincPointer\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BluePill_LEDBlincPointer\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Inline_1/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Keypad4x4verUdemy/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NucleoF446RE_ButRead\ (1)/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NucleoF446RE_ButRead/activeLaunchMode=run
