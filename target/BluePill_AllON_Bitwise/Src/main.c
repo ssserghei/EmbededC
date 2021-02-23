@@ -1,4 +1,5 @@
-/*Это проект Лед блинка БЕЗ отладки!!
+/***********************************************
+ * Это проект Лед блинка БЕЗ отладки!!
  * Добавлена функция включения/выключения ВСЕХ пинов
  * пины отмеченные * не реагируют.
  */
@@ -170,16 +171,15 @@ uint32_t *pPortCOutReg	= (uint32_t*)0x4001100C;
 //PORTC; Configure as LOW PC13;PC14;PC15
 *pPortCOutReg &=0x1FFF;
 //*************************************************************************
-	initialise_monitor_handles();
-	printf("Hello World\n");
+
 	/* Loop forever */
 while(1){
 //turn ONN the LED
 	*pPortCOutReg	&=0xFFFFDFFF;	//set	PC13 as low (enable LED)
-	for(uint32_t i=0; i<100000; i++);
+	for(uint32_t i=0; i<80000; i++);
 //turn OFF LED
 	*pPortCOutReg	|=0x2000;		//set	PC13 as high (disable LED)
-	for(uint32_t i=0; i<100000; i++);
+	for(uint32_t i=0; i<80000; i++);
 	}//end while
 
 }//end main
