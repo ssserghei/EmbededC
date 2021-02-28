@@ -1,20 +1,24 @@
-21:19:59 **** Incremental Build of configuration Debug for project Inline_1 ****
+23:35:21 **** Incremental Build of configuration Debug for project Inline_1 ****
 make -j2 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "Inline_1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\GitHub\Embeded-C\target\Inline_1\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Inline_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Inline_1.elf
- 
-arm-none-eabi-objdump -h -S  Inline_1.elf  > "Inline_1.list"
-arm-none-eabi-objcopy  -O binary  Inline_1.elf  "Inline_1.bin"
-Finished building: Inline_1.bin
- 
-arm-none-eabi-size   Inline_1.elf 
-Finished building: Inline_1.list
- 
-   text	   data	    bss	    dec	    hex	filename
-    568	      8	   1568	   2144	    860	Inline_1.elf
-Finished building: default.size.stdout
- 
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c: In function 'main':
+../Src/main.c:38:2: error: '__' undeclared (first use in this function)
+  __ asm volatile ("MOV %0, %1": "=r"(var2): "r"(var1));
+  ^~
+../Src/main.c:38:2: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:38:5: error: expected ';' before 'asm'
+  __ asm volatile ("MOV %0, %1": "=r"(var2): "r"(var1));
+     ^~~
+../Src/main.c:37:15: warning: unused variable 'var2' [-Wunused-variable]
+  int var1=10, var2;
+               ^~~~
+../Src/main.c:37:6: warning: unused variable 'var1' [-Wunused-variable]
+  int var1=10, var2;
+      ^~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j2 all" terminated with exit code 2. Build might be incomplete.
 
-21:20:03 Build Finished. 0 errors, 0 warnings. (took 4s.208ms)
+23:35:22 Build Failed. 4 errors, 2 warnings. (took 798ms)
 

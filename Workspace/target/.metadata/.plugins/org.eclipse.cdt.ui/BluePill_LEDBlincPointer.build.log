@@ -1,10 +1,16 @@
-22:16:39 **** Incremental Build of configuration Debug for project BluePill_LEDBlincPointer ****
+23:35:11 **** Incremental Build of configuration Debug for project BluePill_LEDBlincPointer ****
 make -j2 all 
+arm-none-eabi-objdump -h -S  BluePill_LEDBlincPointer.elf  > "BluePill_LEDBlincPointer.list"
+arm-none-eabi-objcopy  -O binary  BluePill_LEDBlincPointer.elf  "BluePill_LEDBlincPointer.bin"
+Finished building: BluePill_LEDBlincPointer.bin
+ 
 arm-none-eabi-size   BluePill_LEDBlincPointer.elf 
    text	   data	    bss	    dec	    hex	filename
    3688	    108	   1580	   5376	   1500	BluePill_LEDBlincPointer.elf
+Finished building: BluePill_LEDBlincPointer.list
+ 
 Finished building: default.size.stdout
  
 
-22:16:39 Build Finished. 0 errors, 0 warnings. (took 459ms)
+23:35:12 Build Finished. 0 errors, 0 warnings. (took 1s.115ms)
 

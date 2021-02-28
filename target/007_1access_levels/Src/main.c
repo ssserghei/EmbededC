@@ -50,7 +50,7 @@ void change_access_level_unpriv(void)
 	//write
 	__asm volatile ("MSR CONTROL,R0");
 
-}
+ }
 
 /* This function executes in THREAD MODE+ PRIV ACCESS LEVEL of the processor */
 int main(void)

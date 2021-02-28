@@ -1,0 +1,10 @@
+23:50:47 **** Incremental Build of configuration Debug for project BluePill_QuickStart ****
+make -j2 all 
+arm-none-eabi-size   BluePill_QuickStart.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2224	     12	   1564	   3800	    ed8	BluePill_QuickStart.elf
+Finished building: default.size.stdout
+ 
+
+23:50:47 Build Finished. 0 errors, 0 warnings. (took 547ms)
+

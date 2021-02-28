@@ -134,7 +134,7 @@ void change_access_level_unpriv(void)
 	__asm volatile ("MSR CONTROL,R0");
  80001b0:	f380 8814 	msr	CONTROL, r0
 
-}
+ }
  80001b4:	bf00      	nop
  80001b6:	46bd      	mov	sp, r7
  80001b8:	bc80      	pop	{r7}
