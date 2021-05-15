@@ -27,24 +27,24 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  0001035c  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0000093f  00000000  00000000  0001038c  2**0
-                  CONTENTS, READONLY, DEBUGGING
- 13 .debug_abbrev 00000191  00000000  00000000  00010ccb  2**0
-                  CONTENTS, READONLY, DEBUGGING
- 14 .debug_aranges 00000048  00000000  00000000  00010e60  2**3
-                  CONTENTS, READONLY, DEBUGGING
- 15 .debug_ranges 00000030  00000000  00000000  00010ea8  2**3
-                  CONTENTS, READONLY, DEBUGGING
- 16 .debug_macro  00001c1f  00000000  00000000  00010ed8  2**0
-                  CONTENTS, READONLY, DEBUGGING
- 17 .debug_line   0000062c  00000000  00000000  00012af7  2**0
-                  CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    00007e55  00000000  00000000  00013123  2**0
-                  CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  0001af78  2**0
+ 12 .debug_info   000009d8  00000000  00000000  0001038c  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .debug_abbrev 000001b1  00000000  00000000  00010d64  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 14 .debug_aranges 00000048  00000000  00000000  00010f18  2**3
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 15 .debug_ranges 00000030  00000000  00000000  00010f60  2**3
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .debug_macro  00001cb4  00000000  00000000  00010f90  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 17 .debug_line   0000064d  00000000  00000000  00012c44  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 18 .debug_str    00007f15  00000000  00000000  00013291  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 19 .comment      00000053  00000000  00000000  0001b1a6  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000058  00000000  00000000  0001aff4  2**2
-                  CONTENTS, READONLY, DEBUGGING
+ 20 .debug_frame  00000058  00000000  00000000  0001b1fc  2**2
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
 
@@ -300,29 +300,29 @@ Infinite_Loop:
 
 080002f4 <__libc_init_array>:
  80002f4:	b570      	push	{r4, r5, r6, lr}
- 80002f6:	4e0d      	ldr	r6, [pc, #52]	; (800032c <__libc_init_array+0x38>)
+ 80002f6:	4d0d      	ldr	r5, [pc, #52]	; (800032c <__libc_init_array+0x38>)
  80002f8:	4c0d      	ldr	r4, [pc, #52]	; (8000330 <__libc_init_array+0x3c>)
- 80002fa:	1ba4      	subs	r4, r4, r6
+ 80002fa:	1b64      	subs	r4, r4, r5
  80002fc:	10a4      	asrs	r4, r4, #2
- 80002fe:	2500      	movs	r5, #0
- 8000300:	42a5      	cmp	r5, r4
+ 80002fe:	2600      	movs	r6, #0
+ 8000300:	42a6      	cmp	r6, r4
  8000302:	d109      	bne.n	8000318 <__libc_init_array+0x24>
- 8000304:	4e0b      	ldr	r6, [pc, #44]	; (8000334 <__libc_init_array+0x40>)
+ 8000304:	4d0b      	ldr	r5, [pc, #44]	; (8000334 <__libc_init_array+0x40>)
  8000306:	4c0c      	ldr	r4, [pc, #48]	; (8000338 <__libc_init_array+0x44>)
  8000308:	f000 f818 	bl	800033c <_init>
- 800030c:	1ba4      	subs	r4, r4, r6
+ 800030c:	1b64      	subs	r4, r4, r5
  800030e:	10a4      	asrs	r4, r4, #2
- 8000310:	2500      	movs	r5, #0
- 8000312:	42a5      	cmp	r5, r4
+ 8000310:	2600      	movs	r6, #0
+ 8000312:	42a6      	cmp	r6, r4
  8000314:	d105      	bne.n	8000322 <__libc_init_array+0x2e>
  8000316:	bd70      	pop	{r4, r5, r6, pc}
- 8000318:	f856 3025 	ldr.w	r3, [r6, r5, lsl #2]
+ 8000318:	f855 3b04 	ldr.w	r3, [r5], #4
  800031c:	4798      	blx	r3
- 800031e:	3501      	adds	r5, #1
+ 800031e:	3601      	adds	r6, #1
  8000320:	e7ee      	b.n	8000300 <__libc_init_array+0xc>
- 8000322:	f856 3025 	ldr.w	r3, [r6, r5, lsl #2]
+ 8000322:	f855 3b04 	ldr.w	r3, [r5], #4
  8000326:	4798      	blx	r3
- 8000328:	3501      	adds	r5, #1
+ 8000328:	3601      	adds	r6, #1
  800032a:	e7f2      	b.n	8000312 <__libc_init_array+0x1e>
  800032c:	08000354 	.word	0x08000354
  8000330:	08000354 	.word	0x08000354

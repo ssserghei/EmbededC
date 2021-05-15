@@ -1,5 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
 ################################################################################
 
 -include ../makefile.init
@@ -27,6 +28,12 @@ endif
 
 -include ../makefile.defs
 
+OPTIONAL_TOOL_DEPS := \
+$(wildcard ../makefile.defs) \
+$(wildcard ../makefile.init) \
+$(wildcard ../makefile.targets) \
+
+
 BUILD_ARTIFACT_NAME := NucleoF446RE_ButRead
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX := 
@@ -53,22 +60,22 @@ all: main-build
 main-build: NucleoF446RE_ButRead.elf secondary-outputs
 
 # Tool invocations
-NucleoF446RE_ButRead.elf: $(OBJS) $(USER_OBJS) D:\GitHub\Embeded-C\target\NucleoF446RE_ButRead\STM32F446RETX_FLASH.ld
+NucleoF446RE_ButRead.elf: $(OBJS) $(USER_OBJS) D:\GitHub\Embeded-C\target\NucleoF446RE_ButRead\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-gcc -o "NucleoF446RE_ButRead.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\GitHub\Embeded-C\target\NucleoF446RE_ButRead\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NucleoF446RE_ButRead.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-default.size.stdout: $(EXECUTABLES)
+default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-size  $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-NucleoF446RE_ButRead.list: $(EXECUTABLES)
+NucleoF446RE_ButRead.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "NucleoF446RE_ButRead.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-NucleoF446RE_ButRead.bin: $(EXECUTABLES)
+NucleoF446RE_ButRead.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "NucleoF446RE_ButRead.bin"
 	@echo 'Finished building: $@'
 	@echo ' '

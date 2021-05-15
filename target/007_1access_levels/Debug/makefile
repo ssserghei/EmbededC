@@ -1,5 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
 ################################################################################
 
 -include ../makefile.init
@@ -27,6 +28,12 @@ endif
 
 -include ../makefile.defs
 
+OPTIONAL_TOOL_DEPS := \
+$(wildcard ../makefile.defs) \
+$(wildcard ../makefile.init) \
+$(wildcard ../makefile.targets) \
+
+
 BUILD_ARTIFACT_NAME := 007_1access_levels
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX := 
@@ -53,22 +60,22 @@ all: main-build
 main-build: 007_1access_levels.elf secondary-outputs
 
 # Tool invocations
-007_1access_levels.elf: $(OBJS) $(USER_OBJS) D:\GitHub\Embeded-C\target\007_1access_levels\STM32F103C8TX_FLASH.ld
+007_1access_levels.elf: $(OBJS) $(USER_OBJS) D:\GitHub\Embeded-C\target\007_1access_levels\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-gcc -o "007_1access_levels.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\GitHub\Embeded-C\target\007_1access_levels\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007_1access_levels.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-default.size.stdout: $(EXECUTABLES)
+default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-size  $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-007_1access_levels.list: $(EXECUTABLES)
+007_1access_levels.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "007_1access_levels.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-007_1access_levels.bin: $(EXECUTABLES)
+007_1access_levels.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "007_1access_levels.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
